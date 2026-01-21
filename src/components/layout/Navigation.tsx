@@ -32,7 +32,7 @@ const Navigation = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-2 rounded-lg border-brand-navy text-brand-navy hover:bg-brand-navy/10"
+            className="border-2 rounded-lg border-brand-navy text-brand-navy hover:bg-gray-50"
           >
             Start free account
           </Button>
