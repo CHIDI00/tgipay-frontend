@@ -50,8 +50,8 @@ const Footer = () => {
 
   return (
     <footer className="w-full py-16 bg-brand-navy">
-      <div className="mx-auto max-w-[90rem] my-20">
-        <div className="grid grid-cols-5 gap-12 mb-8">
+      <div className="mx-auto max-w-[90rem] px-4 lg:my-20 my-2">
+        <div className="grid lg:grid-cols-5 grid-cols-1 gap-12 mb-8">
           {/* Brand Column */}
           <div className="flex flex-col gap-4 mb-6">
             <div className="col-span-1">

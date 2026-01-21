@@ -8,10 +8,10 @@ import CircularChart from "../../../../public/CircularChart.svg";
 const HeroSection = () => {
   return (
     <section className="w-full bg-[#F9FAFB] ">
-      <div className="max-w-[90rem] mx-auto ">
+      <div className="max-w-[90rem] px-4 mx-auto ">
         <div className="grid items-center grid-cols-1 lg:grid-cols-2">
           {/* Left Content  */}
-          <div className="py-[4.4rem] space-y-14">
+          <div className="py-[4.4rem] md:space-y-14 space-y-5">
             <h1 className="font-montserrat font-bold text-[30px] md:text-[60px] lg:text-[65px] leading-tight lg:leading-[80px]">
               <span className="text-hero-navy">Enjoy fast, secure,</span>
               <br />
