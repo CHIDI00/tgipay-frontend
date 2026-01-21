@@ -62,7 +62,7 @@ const HeroSection = () => {
               alt="Payment solutions professional"
               width={300}
               height={300}
-              className="absolute bottom-0 -translate-x-1/2 left-1/2"
+              className="absolute bottom-0 -translate-x-1/2 shadow-3xl left-1/2"
               priority
             />
           </div>
