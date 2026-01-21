@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <div className="w-full py-5">
+    <div className="w-full py-5 bg-[#F9FAFB]">
       <div className="max-w-[90rem] mx-auto flex justify-between items-center">
         <div className="flex flex-col items-end justify-end">
           <Image src={primaryLogo} alt="TGI Pay Logo" width={120} height={40} />
