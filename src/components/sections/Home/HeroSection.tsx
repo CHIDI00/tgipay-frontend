@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2">
           {/* Left Content  */}
           <div className="py-[4.4rem] md:space-y-14 space-y-5 ">
-            <h1 className="font-bold text-[30px] md:text-[60px] lg:text-[65px] leading-tight lg:leading-[80px]">
+            <h1 className="font-bold text-[30px] md:text-[60px] lg:text-[65px] leading-tight lg:leading-[70px]">
               <span className="text-hero-navy">Enjoy fast, secure,</span>
               <br />
               <span className="text-hero-navy">and </span>
@@ -21,7 +21,7 @@ const HeroSection = () => {
               <span className="text-hero-cyan">payment solutions</span>
             </h1>
 
-            <p className="font-medium text-[16px] md:text-[24px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
+            <p className="font-medium text-[16px] md:text-[20px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
               Experience payments without boundaries. We offer fast, secure, and
               frictionless transactions for businesses and individuals. You can
               focus on growing while we handle the payments.

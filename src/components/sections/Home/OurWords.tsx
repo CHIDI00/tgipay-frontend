@@ -16,7 +16,7 @@ const OurWords = () => {
 
             <p className=" font-normal text-[16px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
               There are multiple simple and effective ways to collect payments
-              tailored to both businesses and individuals. Whether you're a
+              tailored to both businesses and individuals. Whether you&apos;re a
               merchant, freelancer, or service provider, here’s how you can
               streamline the process
             </p>

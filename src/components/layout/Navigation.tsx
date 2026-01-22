@@ -9,7 +9,7 @@ import { Menu } from "lucide-react";
 
 const Navigation = () => {
   return (
-    <div className="fixed top-0 w-full py-3 bg-[#F9FAFB]">
+    <div className="fixed top-0 w-full py-3 bg-[#f9fafbe6]">
       <div className="max-w-[90rem] mx-auto px-4 flex justify-between items-center">
         <div className="flex flex-col items-end justify-end">
           <Image src={primaryLogo} alt="TGI Pay Logo" width={100} height={35} />
