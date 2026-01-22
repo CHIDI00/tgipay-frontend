@@ -8,11 +8,11 @@ import CircularChart from "../../../../public/CircularChart.svg";
 const HeroSection = () => {
   return (
     <section className="w-full lg:h-[49rem] h-[100dvh] bg-[#F9FAFB] ">
-      <div className="max-w-[90rem] h-full flex justify-center items-center px-4 mx-auto ">
-        <div className="grid items-center h-full grid-cols-1 lg:grid-cols-2">
+      <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden ">
+        <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2">
           {/* Left Content  */}
-          <div className="py-[4.4rem] md:space-y-14 space-y-5">
-            <h1 className="font-montserrat font-bold text-[30px] md:text-[60px] lg:text-[65px] leading-tight lg:leading-[80px]">
+          <div className="py-[4.4rem] md:space-y-14 space-y-5 ">
+            <h1 className="font-bold text-[30px] md:text-[60px] lg:text-[65px] leading-tight lg:leading-[80px]">
               <span className="text-hero-navy">Enjoy fast, secure,</span>
               <br />
               <span className="text-hero-navy">and </span>
@@ -21,7 +21,7 @@ const HeroSection = () => {
               <span className="text-hero-cyan">payment solutions</span>
             </h1>
 
-            <p className="font-montserrat font-medium text-[16px] md:text-[24px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
+            <p className="font-medium text-[16px] md:text-[24px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
               Experience payments without boundaries. We offer fast, secure, and
               frictionless transactions for businesses and individuals. You can
               focus on growing while we handle the payments.
@@ -30,14 +30,14 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-4 pt-6">
               <Button
                 size="lg"
-                className="bg-hero-cyan hover:bg-hero-cyan/90 text-white font-montserrat font-semibold text-[15px] px-6 py-4 h-auto rounded-lg"
+                className="bg-hero-cyan hover:bg-hero-cyan/90 text-white font-semibold text-[15px] px-6 py-4 h-auto rounded-lg"
               >
                 Create Free Account
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-hero-navy text-hero-navy hover:bg-gray-50 font-montserrat font-semibold text-[15px] px- py-4 h-auto rounded-lg"
+                className="border-2 border-hero-navy text-hero-navy hover:bg-gray-50 font-semibold text-[15px] px- py-4 h-auto rounded-lg"
               >
                 Learn more
               </Button>
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content */}
-          <div className="relative flex items-end justify-center h-full lg:justify-end">
+          <div className="relative flex items-end justify-center h-full lg:justify-end -bottom-2">
             <div className="relative w-full">
               <Image
                 src={herosectionperson}

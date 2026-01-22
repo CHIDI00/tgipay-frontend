@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import ussd from "../../../../public/ussd.svg";
+import transferimage from "../../../../public/transferimage.svg";
 
-const OfflinePayment = () => {
+const BankTransferSolution = () => {
   return (
     <div className="w-full py-20 lg:py-24">
       <div className="max-w-[90rem] px-4 mx-auto">
@@ -24,33 +24,32 @@ const OfflinePayment = () => {
                 }}
               />
               <span className=" font-semibold text-[14px] text-[#727677]">
-                USSD
+                Transfers
               </span>
             </div>
 
             <h2 className=" font-bold text-[28px] md:text-[36px] leading-[30px] text-brand-navy">
-              USSD / Offline Payment
+              Bank Transfer Solution
             </h2>
 
             <p className=" font-normal text-[16px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
-              It gives us a delight to keep our customers satisfied by providing
-              various channels to ease payment collections, The Unstructured
-              Supplementary Service Data (USSD) allows customers without
-              internet access to receive payments for goods and services via
-              USSD unique codes in a simple, safe and fast manner. This also can
-              be used to collect payments for other purposes. As long as you
-              have a phone, without data for internet access you are not
-              hindered from receiving payments for goods and services.
+              Safety, security and simplicity are our unique selling points. The
+              bank transfer channel provides the customer the opportunity to
+              make a transfer to a one time bank account uniquely generated and
+              customized to the customer making the payment. It is easily
+              identifiable for prompt transaction termination without delay or
+              hiccups
             </p>
           </div>
 
           {/* Card Image */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src={ussd}
+              src={transferimage}
               alt="Debit cards illustration"
               width={650}
               height={400}
+              quality={90}
               className="w-full max-w-[650px] h-auto"
             />
           </div>
@@ -59,4 +58,5 @@ const OfflinePayment = () => {
     </div>
   );
 };
-export default OfflinePayment;
+
+export default BankTransferSolution;

@@ -2,13 +2,24 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import ussd from "../../../../public/ussd.svg";
+import bankaccountsolution from "../../../../public/bankaccountsolution.svg";
 
-const OfflinePayment = () => {
+const BankAccountSolution = () => {
   return (
-    <div className="w-full py-20 lg:py-24">
-      <div className="max-w-[90rem] px-4 mx-auto">
+    <div className="w-full py-20 lg:py-24 bg-[#F9F9F9]">
+      <div className="max-w-[90rem] px-4 mx-auto ">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
+          {/* Card Image */}
+          <div className="flex justify-center lg:justify-start">
+            <Image
+              src={bankaccountsolution}
+              alt="Debit cards illustration"
+              width={620}
+              height={400}
+              className="w-full max-w-[620px] h-auto"
+            />
+          </div>
+
           {/* Content */}
           <div className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start">
             <div className="inline-flex items-center gap-[10px] px-4 py-2 border border-[#44c3e3] rounded-[20px]">
@@ -24,39 +35,27 @@ const OfflinePayment = () => {
                 }}
               />
               <span className=" font-semibold text-[14px] text-[#727677]">
-                USSD
+                Bank Account
               </span>
             </div>
 
             <h2 className=" font-bold text-[28px] md:text-[36px] leading-[30px] text-brand-navy">
-              USSD / Offline Payment
+              Bank Account Solution
             </h2>
 
             <p className=" font-normal text-[16px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
-              It gives us a delight to keep our customers satisfied by providing
-              various channels to ease payment collections, The Unstructured
-              Supplementary Service Data (USSD) allows customers without
-              internet access to receive payments for goods and services via
-              USSD unique codes in a simple, safe and fast manner. This also can
-              be used to collect payments for other purposes. As long as you
-              have a phone, without data for internet access you are not
-              hindered from receiving payments for goods and services.
+              One of our effective payment channels is the use of our bank
+              account method whereby you choose your bank, enter in your bank
+              account and with our integration with the settlement system your
+              bank is debited of the payment amount followed by instant receipt
+              generated for your records. This method ensures that no one can
+              make payment on your behalf using your details.
             </p>
-          </div>
-
-          {/* Card Image */}
-          <div className="flex justify-center lg:justify-end">
-            <Image
-              src={ussd}
-              alt="Debit cards illustration"
-              width={650}
-              height={400}
-              className="w-full max-w-[650px] h-auto"
-            />
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default OfflinePayment;
+
+export default BankAccountSolution;

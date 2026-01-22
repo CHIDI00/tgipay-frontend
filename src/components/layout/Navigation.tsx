@@ -14,7 +14,7 @@ const Navigation = () => {
         <div className="flex flex-col items-end justify-end">
           <Image src={primaryLogo} alt="TGI Pay Logo" width={100} height={35} />
           <div className="flex items-center justify-center gap-1">
-            <p className="text-[0.7rem]">Licenced by CBN</p>
+            <p className="text-[0.5rem]">Licenced by CBN</p>
             <Image src={cbnLogo} alt="TGI Pay Logo" width={10} height={10} />
           </div>
         </div>
