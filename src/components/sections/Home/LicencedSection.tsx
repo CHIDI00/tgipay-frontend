@@ -11,14 +11,34 @@ const LicencedSection = () => {
   return (
     <div className="w-full">
       <div className="max-w-[90rem] px-4 mx-auto py-10">
-        <div className="flex flex-wrap items-center justify-between">
-          <p className="text-xl font-bold text-brand-navy">
+        <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0">
+          <p className="w-full mb-4 text-lg font-bold text-center md:text-xl text-brand-navy md:w-auto md:text-left md:mb-0">
             We are fully licenced by:
           </p>
 
-          <Image src={ndpc} alt="CBN Logo" width={300} height={300} />
-          <Image src={cbnlogo} alt="CBN Logo" width={100} height={100} />
-          <Image src={pcidss} alt="CBN Logo" width={150} height={150} />
+          <Image
+            src={ndpc}
+            alt="NDPC Logo"
+            width={300}
+            height={100}
+            className="w-32 md:w-[300px] h-auto"
+          />
+
+          <Image
+            src={cbnlogo}
+            alt="CBN Logo"
+            width={100}
+            height={100}
+            className="w-16 md:w-[100px] h-auto"
+          />
+
+          <Image
+            src={pcidss}
+            alt="PCI DSS Logo"
+            width={150}
+            height={150}
+            className="w-24 md:w-[150px] h-auto"
+          />
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import OurResultSpeaks from "@/components/sections/Home/OurResultSpeaks";
 import OurWords from "@/components/sections/Home/OurWords";
 import PaymentLinkSolution from "@/components/sections/Home/PaymentLinkSolution";
 import PaymentQuestionAnswered from "@/components/sections/Home/PaymentQuestionAnswered";
+import ReadyToTransform from "@/components/sections/Home/ReadyToTransform";
 import WaysToReceivePayments from "@/components/sections/Home/WaysToReceivePayments";
 import WeEmpowerBusiness from "@/components/sections/Home/WeEmpowerBusiness";
 import React from "react";
@@ -29,6 +30,7 @@ const page = () => {
       <OurWords />
       <WaysToReceivePayments />
       <PaymentQuestionAnswered />
+      <ReadyToTransform />
     </div>
   );
 };
