@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import React from "react";
 
@@ -11,9 +13,14 @@ const WeEmpowerBusiness = () => {
             <span className="text-brand-cyan">secure payment systems</span>
           </h1>
 
-          <p className="text-white font-light text-center md:text-[24px] text-[16px]">helping you collect payments, confirm transactions instantly, track financial activities, and grow with unmatched efficiency.</p>
+          <p className="text-white font-light text-center md:text-[24px] text-[16px]">
+            helping you collect payments, confirm transactions instantly, track
+            financial activities, and grow with unmatched efficiency.
+          </p>
 
-          <Button className="bg-transparent border-2 border-white px-12 py-6 rounded-lg">Learn more</Button>
+          <Button className="px-12 py-6 bg-transparent border-2 border-white rounded-lg">
+            Learn more
+          </Button>
         </div>
       </div>
     </div>

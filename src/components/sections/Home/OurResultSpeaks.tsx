@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 const stats = [
@@ -21,7 +23,7 @@ const stats = [
 
 const OurResultSpeaks = () => {
   return (
-    <section className="bg-brand-navy py-24 px-4 sm:px-6 lg:px-8">
+    <section className="px-4 py-24 bg-brand-navy sm:px-6 lg:px-8">
       <div className="max-w-[90rem] mx-auto">
         {/* Heading */}
         <h2 className="text-white text-center font-bold text-3xl sm:text-5xl lg:text-[55px] leading-tight lg:leading-[60px] mb-20 max-w-5xl mx-auto">
@@ -29,7 +31,7 @@ const OurResultSpeaks = () => {
         </h2>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-white font-bold text-5xl lg:text-[55px] leading-[60px] mb-4">
