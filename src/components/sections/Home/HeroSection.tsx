@@ -7,9 +7,9 @@ import CircularChart from "../../../../public/CircularChart.svg";
 
 const HeroSection = () => {
   return (
-    <section className="w-full bg-[#F9FAFB] ">
-      <div className="max-w-[90rem] px-4 mx-auto ">
-        <div className="grid items-center grid-cols-1 lg:grid-cols-2">
+    <section className="w-full lg:h-[49rem] bg-[#F9FAFB] ">
+      <div className="max-w-[90rem] h-full flex justify-center items-center px-4 mx-auto ">
+        <div className="grid items-center h-full grid-cols-1 lg:grid-cols-2">
           {/* Left Content  */}
           <div className="py-[4.4rem] md:space-y-14 space-y-5">
             <h1 className="font-montserrat font-bold text-[30px] md:text-[60px] lg:text-[65px] leading-tight lg:leading-[80px]">
@@ -21,7 +21,7 @@ const HeroSection = () => {
               <span className="text-hero-cyan">payment solutions</span>
             </h1>
 
-            <p className="font-montserrat font-medium text-[20px] md:text-[24px] leading-[28px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
+            <p className="font-montserrat font-medium text-[16px] md:text-[24px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
               Experience payments without boundaries. We offer fast, secure, and
               frictionless transactions for businesses and individuals. You can
               focus on growing while we handle the payments.

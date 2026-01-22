@@ -8,8 +8,8 @@ import pcidss from "../../../../public/pcidsslogo.svg";
 const LicencedSection = () => {
   return (
     <div className="w-full">
-      <div className="max-w-[90rem] mx-auto py-10">
-        <div className="flex items-center justify-between flex-wrap">
+      <div className="max-w-[90rem] px-4 mx-auto py-10">
+        <div className="flex flex-wrap items-center justify-between">
           <p className="text-xl font-bold text-brand-navy">
             We are fully licenced by:
           </p>

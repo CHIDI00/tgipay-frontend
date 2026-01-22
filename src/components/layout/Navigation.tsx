@@ -9,10 +9,10 @@ import { Menu } from "lucide-react";
 
 const Navigation = () => {
   return (
-    <div className="w-full py-5 bg-[#F9FAFB]">
+    <div className="fixed top-0 w-full py-3 bg-[#F9FAFB]">
       <div className="max-w-[90rem] mx-auto px-4 flex justify-between items-center">
         <div className="flex flex-col items-end justify-end">
-          <Image src={primaryLogo} alt="TGI Pay Logo" width={120} height={40} />
+          <Image src={primaryLogo} alt="TGI Pay Logo" width={100} height={35} />
           <div className="flex items-center justify-center gap-1">
             <p className="text-[0.7rem]">Licenced by CBN</p>
             <Image src={cbnLogo} alt="TGI Pay Logo" width={10} height={10} />
@@ -27,7 +27,7 @@ const Navigation = () => {
           <Link href="/contactUs">Contact Us</Link>
         </div>
 
-        <div className="items-center justify-between hidden md:flex gap-7">
+        <div className="items-center justify-between hidden lg:flex gap-7">
           <p>Pay your Task</p>
 
           <Button className="rounded-lg">Login</Button>
@@ -40,7 +40,9 @@ const Navigation = () => {
           </Button>
         </div>
 
-        {/* {window.innerHeight < 500 && <Button className="p-0 text-black bg-transparent"><Menu size={100} /></Button>} */}
+        <Button className="block px-3 text-black bg-transparent hover:bg-gray-200 lg:hidden">
+          <Menu size={100} />
+        </Button>
       </div>
     </div>
   );
