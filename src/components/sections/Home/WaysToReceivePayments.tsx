@@ -23,10 +23,10 @@ const cardContent = [
 
 const WaysToReceivePayments = () => {
   return (
-    <section className="px-4 py-24 bg-[#EAFBF1] sm:px-6 lg:px-8">
+    <section className="px-4 md:py-24 py-16 bg-[#EAFBF1] sm:px-6 lg:px-8">
       <div className="max-w-[90rem] mx-auto">
         <div className="flex flex-col w-full gap-14">
-          <p className="text-[3rem] font-bold leading-[50px] text-brand-navy">
+          <p className="md:ext-[3rem] text-[2rem] font-bold md:leading-[50px] leading-[40px] text-brand-navy">
             Ways to Receive <br /> Payments with Ease
           </p>
 
@@ -37,11 +37,11 @@ const WaysToReceivePayments = () => {
             streamline the process
           </p>
 
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
             {cardContent.map((card) => (
               <div
                 key={card.id}
-                className="flex flex-col w-full p-20 bg-white rounded-lg gap-7"
+                className="flex flex-col w-full p-10 bg-white rounded-lg md:p-20 gap-7"
               >
                 <p className="text-lg font-bold text-brand-navy">
                   {card.title}

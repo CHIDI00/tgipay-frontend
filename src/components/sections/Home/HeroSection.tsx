@@ -50,8 +50,8 @@ const HeroSection = () => {
               <Image
                 src={herosectionperson}
                 alt="Payment solutions professional"
-                width={700}
-                height={700}
+                width={1000}
+                height={800}
                 className="w-full h-auto"
                 priority
               />
