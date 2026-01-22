@@ -7,7 +7,7 @@ import CircularChart from "../../../../public/CircularChart.svg";
 
 const HeroSection = () => {
   return (
-    <section className="w-full lg:h-[49rem] bg-[#F9FAFB] ">
+    <section className="w-full lg:h-[49rem] h-[100dvh] bg-[#F9FAFB] ">
       <div className="max-w-[90rem] h-full flex justify-center items-center px-4 mx-auto ">
         <div className="grid items-center h-full grid-cols-1 lg:grid-cols-2">
           {/* Left Content  */}
