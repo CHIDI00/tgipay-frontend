@@ -1,3 +1,4 @@
+import GrowYourBusiness from "@/components/sections/Home/GrowYourBusiness";
 import HeroSection from "@/components/sections/Home/HeroSection";
 import LicencedSection from "@/components/sections/Home/LicencedSection";
 import WeEmpowerBusiness from "@/components/sections/Home/WeEmpowerBusiness";
@@ -9,6 +10,7 @@ const page = () => {
       <HeroSection />
       <LicencedSection />
       <WeEmpowerBusiness />
+      <GrowYourBusiness />
     </div>
   );
 };

@@ -19,7 +19,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex items-center justify-between gap-10 font-normal">
+        <div className="items-center justify-between hidden gap-10 font-normal lg:flex">
           <Link href="/">Home</Link>
           <Link href="/whoWeAre">Who We Are</Link>
           <Link href="/ourProduct">Our Product</Link>
@@ -27,7 +27,7 @@ const Navigation = () => {
           <Link href="/contactUs">Contact Us</Link>
         </div>
 
-        <div className="hidden md:flex items-center justify-between gap-7">
+        <div className="items-center justify-between hidden md:flex gap-7">
           <p>Pay your Task</p>
 
           <Button className="rounded-lg">Login</Button>
@@ -40,7 +40,7 @@ const Navigation = () => {
           </Button>
         </div>
 
-        {/* {window.innerHeight < 500 && <Button className="bg-transparent text-black p-0"><Menu size={100} /></Button>} */}
+        {/* {window.innerHeight < 500 && <Button className="p-0 text-black bg-transparent"><Menu size={100} /></Button>} */}
       </div>
     </div>
   );
