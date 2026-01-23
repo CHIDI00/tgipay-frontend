@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -25,6 +26,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${montserrat.variable} font-sans antialiased`}
       >
+        <SmoothScroll />
         <Navigation />
         {children}
         <Footer />

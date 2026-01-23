@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "Who can use the service of TGI PAY?",
     answer:
-      "TGI Pay is designed for businesses of all sizes—from freelancers and startups to large enterprises—registered in Nigeria. Whether you have a full e-commerce website, a simple blog, or sell directly on social media, our platform provides the tools you need to accept payments securely.",
+      "TGI Pay is designed for businesses of all sizes, from freelancers and startups to large enterprises registered in Nigeria. Whether you have a full e-commerce website, a simple blog, or sell directly on social media, our platform provides the tools you need to accept payments securely.",
   },
   {
     question: "How simple is it to open a merchant account?",
