@@ -39,7 +39,6 @@ const About_whoWeAre = () => {
               </div>
             </div>
 
-            {/* Image 2: Top Right (Market Woman) - Tilted Right Strongly */}
             <div className="absolute right-0 z-20 transition-all duration-300 transform top-4 md:right-8 -rotate-10 hover:z-50 hover:scale-105">
               <div className="bg-white rounded-lg ">
                 <Image
@@ -52,7 +51,6 @@ const About_whoWeAre = () => {
               </div>
             </div>
 
-            {/* Image 3: Bottom Left (Shop Counter) - Slight Tilt Left */}
             <div className="absolute z-30 transition-all duration-300 transform bottom-4 left-4 md:left-12 -rotate-3 hover:z-50 hover:scale-105">
               <div className="bg-white rounded-lg">
                 <Image
@@ -65,7 +63,6 @@ const About_whoWeAre = () => {
               </div>
             </div>
 
-            {/* Image 4: Bottom Right (Lady on Phone) - Tilted Right */}
             <div className="absolute z-10 transition-all duration-300 transform bottom-10 right-2 md:right-4 rotate-6 hover:z-50 hover:scale-105">
               <div className="bg-white rounded-lg ">
                 <Image
