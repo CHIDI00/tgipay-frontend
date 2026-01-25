@@ -1,3 +1,5 @@
+"use client";
+
 import BankAccountSolution from "@/components/sections/Home/BankAccountSolution";
 import BankTransferSolution from "@/components/sections/Home/BankTransferSolution";
 import GrowYourBusiness from "@/components/sections/Home/GrowYourBusiness";

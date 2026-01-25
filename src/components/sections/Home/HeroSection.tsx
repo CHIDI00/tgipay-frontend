@@ -53,7 +53,7 @@ const HeroSection = () => {
                 src={herosectionperson}
                 alt="Payment solutions professional"
                 width={1000}
-                height={800}
+                height={1000}
                 className="w-full h-auto"
                 priority
               />
