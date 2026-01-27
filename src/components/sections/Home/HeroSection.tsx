@@ -6,30 +6,83 @@ import { Button } from "@/components/ui/button";
 
 import herosectionperson from "../../../../public/herosectionperson.png";
 import CircularChart from "../../../../public/CircularChart.svg";
+import SplitText from "@/components/ui/SplitText";
+import FadeInAnimation from "@/components/ui/FadeInAnimation";
+import FloatingAnimation from "@/components/ui/FloatingAnimation"; // 👈 1. Import it
 
 const HeroSection = () => {
   return (
     <section className="w-full lg:h-[49rem] h-[100dvh] bg-[#F9FAFB] ">
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden ">
         <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2">
-          {/* Left Content  */}
+          {/* left content */}
           <div className="py-[4.4rem] md:space-y-14 space-y-5 ">
             <h1 className="font-bold text-[30px] md:text-[60px] lg:text-[65px] leading-tight lg:leading-[70px]">
-              <span className="text-hero-navy">Enjoy fast, secure,</span>
-              <br />
-              <span className="text-hero-navy">and </span>
-              <span className="text-hero-cyan">seamless</span>
-              <br />
-              <span className="text-hero-cyan">payment solutions</span>
+              <div className="text-hero-navy">
+                <SplitText
+                  text="Enjoy fast, secure,"
+                  className="inline-block"
+                  delay={10}
+                  duration={0.7}
+                  ease="power3.out"
+                  splitType="chars"
+                  from={{ opacity: 0, y: 40 }}
+                  to={{ opacity: 1, y: 0 }}
+                  threshold={0.1}
+                />
+              </div>
+
+              <div className="flex flex-wrap gap-x-3 md:gap-x-5">
+                <span className="text-hero-navy">
+                  <SplitText
+                    text="and"
+                    className="inline-block"
+                    delay={20}
+                    duration={0.7}
+                    splitType="chars"
+                    from={{ opacity: 0, y: 40 }}
+                    to={{ opacity: 1, y: 0 }}
+                  />
+                </span>
+                <span className="text-hero-cyan">
+                  <SplitText
+                    text="seamless"
+                    className="inline-block"
+                    delay={40}
+                    duration={0.7}
+                    splitType="chars"
+                    from={{ opacity: 0, y: 40 }}
+                    to={{ opacity: 1, y: 0 }}
+                  />
+                </span>
+              </div>
+
+              <div className="text-hero-cyan">
+                <SplitText
+                  text="payment solutions"
+                  className="inline-block"
+                  delay={50}
+                  duration={0.7}
+                  splitType="chars"
+                  from={{ opacity: 0, y: 40 }}
+                  to={{ opacity: 1, y: 0 }}
+                />
+              </div>
             </h1>
 
-            <p className="font-medium text-[16px] md:text-[20px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
-              Experience payments without boundaries. We offer fast, secure, and
-              frictionless transactions for businesses and individuals. You can
-              focus on growing while we handle the payments.
-            </p>
+            <FadeInAnimation delay={0.5}>
+              <p className="font-medium text-[16px] md:text-[20px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
+                Experience payments without boundaries. We offer fast, secure,
+                and frictionless transactions for businesses and individuals.
+                You can focus on growing while we handle the payments.
+              </p>
+            </FadeInAnimation>
 
-            <div className="flex flex-wrap gap-4 pt-6">
+            <FadeInAnimation
+              delay={1}
+              stagger={0.2}
+              className="flex flex-wrap gap-4 pt-6"
+            >
               <Button
                 size="lg"
                 className="bg-hero-cyan hover:bg-hero-cyan/90 text-white font-semibold text-[15px] px-6 py-4 h-auto rounded-lg"
@@ -39,34 +92,38 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-hero-navy text-hero-navy hover:bg-gray-50 font-semibold text-[15px] px- py-4 h-auto rounded-lg"
+                className="border-2 border-hero-navy text-hero-navy hover:bg-gray-50 font-semibold text-[15px] px-6 py-4 h-auto rounded-lg"
               >
                 Learn more
               </Button>
-            </div>
+            </FadeInAnimation>
           </div>
 
-          {/* Right Content */}
+          {/* right content */}
           <div className="relative flex items-end justify-center h-full lg:justify-end -bottom-2">
-            <div className="relative w-full">
-              <Image
-                src={herosectionperson}
-                alt="Payment solutions professional"
-                width={1000}
-                height={1000}
-                className="w-full h-auto"
-                priority
-              />
-            </div>
+            <FadeInAnimation delay={0.6} stagger={0.2}>
+              <div className="relative w-full">
+                <Image
+                  src={herosectionperson}
+                  alt="Payment solutions professional"
+                  width={1000}
+                  height={1000}
+                  className="w-full h-auto"
+                  priority
+                />
+              </div>
 
-            <Image
-              src={CircularChart}
-              alt="Payment solutions professional"
-              width={300}
-              height={300}
-              className="absolute bottom-0 -translate-x-1/2 shadow-3xl left-1/2"
-              priority
-            />
+              <FloatingAnimation className="absolute bottom-0 z-10 -translate-x-1/2 left-1/2">
+                <Image
+                  src={CircularChart}
+                  alt="Payment solutions professional"
+                  width={300}
+                  height={300}
+                  className="shadow-3xl"
+                  priority
+                />
+              </FloatingAnimation>
+            </FadeInAnimation>
           </div>
         </div>
       </div>
