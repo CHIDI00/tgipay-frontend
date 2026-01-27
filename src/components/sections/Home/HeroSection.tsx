@@ -8,7 +8,7 @@ import herosectionperson from "../../../../public/herosectionperson.png";
 import CircularChart from "../../../../public/CircularChart.svg";
 import SplitText from "@/components/ui/SplitText";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
-import FloatingAnimation from "@/components/ui/FloatingAnimation"; // 👈 1. Import it
+// import FloatingAnimation from "@/components/ui/FloatingAnimation";
 
 const HeroSection = () => {
   return (
@@ -101,28 +101,32 @@ const HeroSection = () => {
 
           {/* right content */}
           <div className="relative flex items-end justify-center h-full lg:justify-end -bottom-2">
-            <FadeInAnimation delay={0.6} stagger={0.2}>
-              <div className="relative w-full">
+            <FadeInAnimation
+              delay={0.6}
+              stagger={0.2}
+              className="h-full lg:h-auto"
+            >
+              <div className="relative w-full h-full ">
                 <Image
                   src={herosectionperson}
                   alt="Payment solutions professional"
                   width={1000}
                   height={1000}
-                  className="w-full h-auto"
+                  className="object-cover w-full h-full lg:h-auto lg:rounded-none rounded-b-[50px]"
                   priority
                 />
               </div>
 
-              <FloatingAnimation className="absolute bottom-0 z-10 -translate-x-1/2 left-1/2">
-                <Image
-                  src={CircularChart}
-                  alt="Payment solutions professional"
-                  width={300}
-                  height={300}
-                  className="shadow-3xl"
-                  priority
-                />
-              </FloatingAnimation>
+              {/* <FloatingAnimation className="absolute bottom-0 z-10 -translate-x-1/2 left-1/2"> */}
+              <Image
+                src={CircularChart}
+                alt="Payment solutions professional"
+                width={300}
+                height={300}
+                className="absolute bottom-0 z-10 -translate-x-1/2 shadow-3xl left-1/2"
+                priority
+              />
+              {/* </FloatingAnimation> */}
             </FadeInAnimation>
           </div>
         </div>

@@ -6,13 +6,13 @@ import Lenis from "lenis";
 export default function SmoothScroll() {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       gestureOrientation: "vertical",
       smoothWheel: true,
     });
 
-    // The animation loop
+    // the animation loop
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -20,7 +20,7 @@ export default function SmoothScroll() {
 
     requestAnimationFrame(raf);
 
-    // Cleanup when component unmounts
+    // cleanup when component unmounts
     return () => {
       lenis.destroy();
     };
