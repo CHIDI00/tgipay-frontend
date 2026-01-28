@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 
 import BankAccountSolution from "@/components/sections/Home/BankAccountSolution";

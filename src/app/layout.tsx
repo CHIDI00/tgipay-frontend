@@ -13,6 +13,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "TGIPay",
   description: "Seamless payment solutions",
+  icons: {
+    icon: "/tgilogo.png",
+  },
 };
 
 export default function RootLayout({
