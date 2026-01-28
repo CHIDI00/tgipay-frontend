@@ -1,5 +1,7 @@
 "use client";
 
+import React from "react";
+
 import BankAccountSolution from "@/components/sections/Home/BankAccountSolution";
 import BankTransferSolution from "@/components/sections/Home/BankTransferSolution";
 import GrowYourBusiness from "@/components/sections/Home/GrowYourBusiness";
@@ -14,7 +16,6 @@ import PaymentQuestionAnswered from "@/components/sections/Home/PaymentQuestionA
 import ReadyToTransform from "@/components/sections/Home/ReadyToTransform";
 import WaysToReceivePayments from "@/components/sections/Home/WaysToReceivePayments";
 import WeEmpowerBusiness from "@/components/sections/Home/WeEmpowerBusiness";
-import React from "react";
 
 const page = () => {
   return (
