@@ -5,30 +5,46 @@ import Image from "next/image";
 
 import cards1 from "../../../../public/cards1.svg";
 import arrowRight from "../../../../public/arrow-right.svg";
+import SplitText from "@/components/ui/SplitText";
+import FadeInAnimation from "@/components/ui/FadeInAnimation";
+import FloatingAnimation from "@/components/ui/FloatingAnimation";
 
 const GrowYourBusiness = () => {
   return (
     <section className="w-full py-20 lg:py-24 bg-[#f9f9f9]">
       <div className="max-w-[90rem] px-4 mx-auto">
         <h1 className="font-bold text-[27px] md:text-[45px] lg:text-[55px] leading-tight lg:leading-[60px] text-center text-brand-navy mb-16 lg:mb-16">
-          Grow Your Business with Us!
+          <SplitText
+            text="Grow Your Business with Us!"
+            className="inline-block"
+            delay={10}
+            duration={0.5}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+          />
         </h1>
 
-        {/* Content Grid */}
-        <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
-          {/* Card Image */}
-          <div className="flex justify-center lg:justify-start">
-            <Image
-              src={cards1}
-              alt="Debit cards illustration"
-              width={510}
-              height={383}
-              className="w-full max-w-[510px] h-auto"
-            />
-          </div>
+        {/* content */}
+        <FadeInAnimation
+          stagger={0.5}
+          className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0"
+        >
+          <FloatingAnimation>
+            <div className="flex justify-center lg:justify-start">
+              <Image
+                src={cards1}
+                alt="Debit cards illustration"
+                width={510}
+                height={383}
+                className="w-full max-w-[510px] h-auto"
+              />
+            </div>
+          </FloatingAnimation>
 
-          {/* Content */}
-          <div className="space-y-8">
+          <FadeInAnimation stagger={0.2} className="space-y-8">
             <div className="inline-flex items-center gap-[10px] px-4 py-2 border border-[#44c3e3] rounded-[20px]">
               <Image
                 src={arrowRight}
@@ -59,8 +75,8 @@ const GrowYourBusiness = () => {
               local currency of the merchant. Whichever choice you make, you are
               guaranteed of speedy and safe payment.
             </p>
-          </div>
-        </div>
+          </FadeInAnimation>
+        </FadeInAnimation>
       </div>
     </section>
   );

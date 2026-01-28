@@ -6,6 +6,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 import mobilephone from "../../../../public/mobilephone.svg";
+import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const ReadyToTransform = () => {
   return (
@@ -13,7 +14,10 @@ const ReadyToTransform = () => {
       <div className="max-w-[90rem] px-4 mx-auto ">
         <div className="flex flex-col-reverse items-center justify-center w-full gap-10 md:flex-row">
           {/* Card Image */}
-          <div className="flex justify-center lg:justify-start">
+          <FadeInAnimation
+            duration={1.2}
+            className="flex justify-center lg:justify-start"
+          >
             <Image
               src={mobilephone}
               alt="Debit cards illustration"
@@ -21,10 +25,13 @@ const ReadyToTransform = () => {
               height={400}
               className="w-full max-w-[400px] h-auto"
             />
-          </div>
+          </FadeInAnimation>
 
           {/* Content */}
-          <div className="flex flex-col items-start justify-start py-8 space-y-8 md:py-20 lg:space-y-14 md:items-center lg:items-start lg:max-w-xl">
+          <FadeInAnimation
+            stagger={0.5}
+            className="flex flex-col items-start justify-start py-8 space-y-8 md:py-20 lg:space-y-14 md:items-center lg:items-start lg:max-w-xl"
+          >
             <h2 className=" font-bold text-[28px] md:text-[55px] md:leading-[60px] leading-[30px] text-white">
               Ready to Transform Your Business?
             </h2>
@@ -41,7 +48,7 @@ const ReadyToTransform = () => {
             >
               Create a Free Account Now!
             </Button>
-          </div>
+          </FadeInAnimation>
         </div>
       </div>
     </div>

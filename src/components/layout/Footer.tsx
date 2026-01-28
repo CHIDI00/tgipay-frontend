@@ -51,7 +51,7 @@ const Footer = () => {
   return (
     <footer className="w-full py-16 bg-brand-navy">
       <div className="mx-auto max-w-[90rem] px-4 lg:my-20 my-2">
-        <div className="grid lg:grid-cols-5 grid-cols-1 gap-12 mb-8">
+        <div className="grid grid-cols-1 gap-12 mb-8 lg:grid-cols-5">
           {/* Brand Column */}
           <div className="flex flex-col gap-4 mb-6">
             <div className="col-span-1">
@@ -79,6 +79,7 @@ const Footer = () => {
                     alt={social.label}
                     width={24}
                     height={24}
+                    className="w-auto"
                   />
                 </Link>
               ))}
@@ -96,6 +97,7 @@ const Footer = () => {
                     alt="Google Play"
                     width={140}
                     height={42}
+                    className="w-auto"
                   />
                 </Link>
                 <Link href="#" className="transition-opacity hover:opacity-80">
@@ -104,6 +106,7 @@ const Footer = () => {
                     alt="App Store"
                     width={140}
                     height={42}
+                    className="w-auto"
                   />
                 </Link>
               </div>

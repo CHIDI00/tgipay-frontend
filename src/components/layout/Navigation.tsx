@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <div className="fixed top-0 w-full py-3 bg-[#f9fafbc4] backdrop-blur-md z-50 transition-all">
       <div className="max-w-[90rem] mx-auto px-4 flex justify-between items-center">
-        <div className="flex flex-col items-start justify-center">
+        <div className="flex flex-col items-end justify-center">
           <Image
             src={primaryLogo}
             alt="TGI Pay Logo"
@@ -23,7 +23,13 @@ const Navigation = () => {
             <p className="text-[0.6rem] font-medium text-brand-navy">
               Licensed by CBN
             </p>
-            <Image src={cbnLogo} alt="CBN Logo" width={12} height={12} />
+            <Image
+              src={cbnLogo}
+              alt="CBN Logo"
+              width={12}
+              height={12}
+              className="w-auto"
+            />
           </div>
         </div>
 

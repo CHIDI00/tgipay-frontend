@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import ourwords from "../../../../public/ourwords.png";
+import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const OurWords = () => {
   return (
@@ -11,7 +12,10 @@ const OurWords = () => {
       <div className="max-w-[90rem] px-4 mx-auto">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
           {/* Content */}
-          <div className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start lg:mr-28">
+          <FadeInAnimation
+            stagger={0.7}
+            className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start lg:mr-28"
+          >
             <h2 className=" font-bold text-[28px] text-left md:text-[55px] leading-tight text-brand-navy">
               Don’t just take our words for it
             </h2>
@@ -22,19 +26,21 @@ const OurWords = () => {
               merchant, freelancer, or service provider, here’s how you can
               streamline the process
             </p>
-          </div>
+          </FadeInAnimation>
 
           {/* Card Image */}
-          <div className="flex justify-center lg:justify-end">
+          <FadeInAnimation
+            duration={1.5}
+            className="flex justify-center lg:justify-end"
+          >
             <Image
               src={ourwords}
               alt="Debit cards illustration"
               width={800}
               height={600}
-              quality={90}
               className="w-full max-w-[800px] h-auto"
             />
-          </div>
+          </FadeInAnimation>
         </div>
       </div>
     </div>

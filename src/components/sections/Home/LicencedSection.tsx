@@ -6,12 +6,16 @@ import Image from "next/image";
 import cbnlogo from "../../../../public/cbnLogo.svg";
 import ndpc from "../../../../public/NDPClogo.svg";
 import pcidss from "../../../../public/pcidsslogo.svg";
+import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const LicencedSection = () => {
   return (
     <div className="w-full">
       <div className="max-w-[90rem] px-4 mx-auto py-10">
-        <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0">
+        <FadeInAnimation
+          stagger={0.2}
+          className="flex flex-wrap items-center justify-between gap-6 md:gap-0"
+        >
           <p className="w-full mb-4 text-lg font-bold text-center md:text-xl text-brand-navy md:w-auto md:text-left md:mb-0">
             We are fully licenced by:
           </p>
@@ -39,7 +43,7 @@ const LicencedSection = () => {
             height={150}
             className="w-24 md:w-[150px] h-auto"
           />
-        </div>
+        </FadeInAnimation>
       </div>
     </div>
   );

@@ -5,14 +5,18 @@ import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
 import invoicingsolution from "../../../../public/invoicingsolution.svg";
+import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const InvoicingSolution = () => {
   return (
     <div className="w-full py-20 lg:py-0 lg:pt-20 bg-[#F9F9F9]">
       <div className="max-w-[90rem] px-4 mx-auto ">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
-          {/* Card Image */}
-          <div className="flex justify-center lg:justify-start">
+          {/* card image */}
+          <FadeInAnimation
+            duration={1}
+            className="flex justify-center lg:justify-start"
+          >
             <Image
               src={invoicingsolution}
               alt="Debit cards illustration"
@@ -20,10 +24,13 @@ const InvoicingSolution = () => {
               height={400}
               className="w-full max-w-[620px] h-auto"
             />
-          </div>
+          </FadeInAnimation>
 
           {/* Content */}
-          <div className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start">
+          <FadeInAnimation
+            stagger={0.2}
+            className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start"
+          >
             <div className="inline-flex items-center gap-[10px] px-4 py-2 border border-[#44c3e3] rounded-[20px]">
               <Image
                 src={arrowRight}
@@ -51,7 +58,7 @@ const InvoicingSolution = () => {
               payments, track payments and receive instant acknowledgment once
               payment is received.
             </p>
-          </div>
+          </FadeInAnimation>
         </div>
       </div>
     </div>

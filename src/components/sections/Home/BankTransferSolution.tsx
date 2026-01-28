@@ -5,14 +5,19 @@ import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
 import transferimage from "../../../../public/transferimage.svg";
+import FadeInAnimation from "@/components/ui/FadeInAnimation";
+import FloatingAnimation from "@/components/ui/FloatingAnimation";
 
 const BankTransferSolution = () => {
   return (
     <div className="w-full py-20 lg:py-24">
       <div className="max-w-[90rem] px-4 mx-auto">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
-          {/* Content */}
-          <div className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start">
+          {/* content */}
+          <FadeInAnimation
+            stagger={0.2}
+            className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start"
+          >
             <div className="inline-flex items-center gap-[10px] px-4 py-2 border border-[#44c3e3] rounded-[20px]">
               <Image
                 src={arrowRight}
@@ -42,19 +47,18 @@ const BankTransferSolution = () => {
               identifiable for prompt transaction termination without delay or
               hiccups
             </p>
-          </div>
+          </FadeInAnimation>
 
-          {/* Card Image */}
-          <div className="flex justify-center lg:justify-end">
+          {/* card image */}
+          <FloatingAnimation className="flex justify-center lg:justify-end">
             <Image
               src={transferimage}
               alt="Debit cards illustration"
               width={650}
               height={400}
-              quality={90}
               className="w-full max-w-[650px] h-auto"
             />
-          </div>
+          </FloatingAnimation>
         </div>
       </div>
     </div>

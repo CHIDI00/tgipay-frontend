@@ -8,7 +8,7 @@ import herosectionperson from "../../../../public/herosectionperson.png";
 import CircularChart from "../../../../public/CircularChart.svg";
 import SplitText from "@/components/ui/SplitText";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
-// import FloatingAnimation from "@/components/ui/FloatingAnimation";
+import FloatingAnimation from "@/components/ui/FloatingAnimation";
 
 const HeroSection = () => {
   return (
@@ -18,7 +18,8 @@ const HeroSection = () => {
           {/* left content */}
           <div className="py-[4.4rem] md:space-y-14 space-y-5 ">
             <h1 className="font-bold text-[30px] md:text-[60px] lg:text-[65px] leading-tight lg:leading-[70px]">
-              <div className="text-hero-navy">
+              <span className="block text-hero-navy">
+                {" "}
                 <SplitText
                   text="Enjoy fast, secure,"
                   className="inline-block"
@@ -30,9 +31,9 @@ const HeroSection = () => {
                   to={{ opacity: 1, y: 0 }}
                   threshold={0.1}
                 />
-              </div>
+              </span>
 
-              <div className="flex flex-wrap gap-x-3 md:gap-x-5">
+              <span className="flex flex-wrap gap-x-3 md:gap-x-5">
                 <span className="text-hero-navy">
                   <SplitText
                     text="and"
@@ -55,9 +56,9 @@ const HeroSection = () => {
                     to={{ opacity: 1, y: 0 }}
                   />
                 </span>
-              </div>
+              </span>
 
-              <div className="text-hero-cyan">
+              <span className="block text-hero-cyan">
                 <SplitText
                   text="payment solutions"
                   className="inline-block"
@@ -67,7 +68,7 @@ const HeroSection = () => {
                   from={{ opacity: 0, y: 40 }}
                   to={{ opacity: 1, y: 0 }}
                 />
-              </div>
+              </span>
             </h1>
 
             <FadeInAnimation delay={0.5}>
@@ -117,16 +118,16 @@ const HeroSection = () => {
                 />
               </div>
 
-              {/* <FloatingAnimation className="absolute bottom-0 z-10 -translate-x-1/2 left-1/2"> */}
-              <Image
-                src={CircularChart}
-                alt="Payment solutions professional"
-                width={300}
-                height={300}
-                className="absolute bottom-0 z-10 -translate-x-1/2 shadow-3xl left-1/2"
-                priority
-              />
-              {/* </FloatingAnimation> */}
+              <FloatingAnimation className="absolute bottom-0 z-10 -translate-x-1/2 left-1/2">
+                <Image
+                  src={CircularChart}
+                  alt="Payment solutions professional"
+                  width={300}
+                  height={300}
+                  className="w-auto shadow-3xl"
+                  priority
+                />
+              </FloatingAnimation>
             </FadeInAnimation>
           </div>
         </div>

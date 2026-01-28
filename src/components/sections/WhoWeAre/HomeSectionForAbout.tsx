@@ -6,6 +6,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 import herosectionperson from "../../../../public/personinwhoweare.svg";
+import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const HomeSectionForAbout = () => {
   return (
@@ -13,7 +14,11 @@ const HomeSectionForAbout = () => {
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden ">
         <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2">
           {/* left content */}
-          <div className="py-[4.4rem] md:space-y-14 space-y-5 ">
+          <FadeInAnimation
+            stagger={0.2}
+            duration={1.2}
+            className="py-[4.4rem] md:space-y-14 space-y-5 "
+          >
             <h1 className="font-bold text-white text-[30px] md:text-[60px] lg:text-[60px] leading-tight lg:leading-[70px]">
               <span className="">The payment gatway</span>
               <br />
@@ -37,11 +42,14 @@ const HomeSectionForAbout = () => {
                 Create Free Account
               </Button>
             </div>
-          </div>
+          </FadeInAnimation>
 
           {/* right content */}
           <div className="relative flex items-center justify-center h-full lg:justify-center -bottom-2">
-            <div className="relative flex items-center justify-center w-full">
+            <FadeInAnimation
+              duration={1}
+              className="relative flex items-center justify-center w-full lg:h-[80%] py-20"
+            >
               <Image
                 src={herosectionperson}
                 alt="Payment solutions professional"
@@ -50,7 +58,7 @@ const HomeSectionForAbout = () => {
                 className="w-[80%] h-auto"
                 priority
               />
-            </div>
+            </FadeInAnimation>
           </div>
         </div>
       </div>
