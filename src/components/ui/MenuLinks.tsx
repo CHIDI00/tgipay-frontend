@@ -24,26 +24,26 @@ const MenuLink = ({
 
   useGSAP(
     () => {
-      const chars = containerRef.current?.querySelectorAll(".char");
-      if (!chars) return;
+      const words = containerRef.current?.querySelectorAll(".word");
+      if (!words) return;
 
       if (isOpen) {
         gsap.fromTo(
-          chars,
+          words,
           { y: 40, opacity: 0 },
           {
             y: 0,
             opacity: 1,
-            duration: 0.2,
-            stagger: 0.03,
+            duration: 0.5,
+            stagger: 0.1,
             delay: 0.4 + index * 0.1,
             ease: "power3.out",
             overwrite: "auto",
           },
         );
       } else {
-        // reset quickly
-        gsap.set(chars, { y: 40, opacity: 0 });
+        // Reset quickly
+        gsap.set(words, { y: 40, opacity: 0 });
       }
     },
     { scope: containerRef, dependencies: [isOpen] },
@@ -54,13 +54,18 @@ const MenuLink = ({
       ref={containerRef}
       href={href}
       onClick={onClick}
-      className="relative block py-1 overflow-hidden text-[2rem] font-bold transition-colors  text-brand-navy hover:text-brand-cyan hover:text-[2rem]"
+      className="relative block py-1 overflow-hidden text-[1.5rem] font-medium transition-colors text-brand-navy hover:text-brand-cyan hover:text-[2rem]"
     >
-      <span className="sr-only">{children}</span>{" "}
+      <span className="sr-only">{children}</span>
+
       <span aria-hidden="true" className="block leading-tight">
-        {children.split("").map((char, i) => (
-          <span key={i} className="inline-block char" style={{ opacity: 0 }}>
-            {char === " " ? "\u00A0" : char}
+        {children.split(" ").map((word, i) => (
+          <span
+            key={i}
+            className="inline-block word mr-2"
+            style={{ opacity: 0 }}
+          >
+            {word}
           </span>
         ))}
       </span>
