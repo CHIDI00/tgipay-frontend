@@ -30,8 +30,8 @@ const HomeSectionForAbout = () => {
 
             <p className="font-medium text-[16px] md:text-[20px] leading-[24px] md:leading-[30px] text-white max-w-[628px]">
               Experience seamless payments with TGIPAY. Built to ensure fast,
-              secure transactions every time — allowing you focus on growing
-              your business with confidence.
+              secure transactions every time allowing you focus on growing your
+              business with confidence.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-6">

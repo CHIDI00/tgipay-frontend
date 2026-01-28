@@ -2,16 +2,23 @@ import Image from "next/image";
 import React from "react";
 import primaryLogo from "../../../public/TGIPrimaryLogo.svg";
 import cbnLogo from "../../../public/cbnLogo.svg";
-
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import MobileMenu from "./MobileMenu";
 
 const Navigation = () => {
+  const menuItems = [
+    { label: "Home", link: "/" },
+    { label: "Who We Are", link: "/whoWeAre" },
+    { label: "Our Product", link: "/ourProduct" },
+    { label: "Our Pricing", link: "/ourPricing" },
+    { label: "Contact Us", link: "/contactUs" },
+  ];
+
   return (
     <div className="fixed top-0 w-full py-3 bg-[#f9fafbc4] backdrop-blur-md z-50 transition-all">
       <div className="max-w-[90rem] mx-auto px-4 flex justify-between items-center">
-        <div className="flex flex-col items-end justify-center">
+        <div className="flex flex-col items-start justify-center">
           <Image
             src={primaryLogo}
             alt="TGI Pay Logo"
@@ -23,13 +30,7 @@ const Navigation = () => {
             <p className="text-[0.6rem] font-medium text-brand-navy">
               Licensed by CBN
             </p>
-            <Image
-              src={cbnLogo}
-              alt="CBN Logo"
-              width={12}
-              height={12}
-              className="w-auto"
-            />
+            <Image src={cbnLogo} alt="CBN Logo" width={12} height={12} />
           </div>
         </div>
 
@@ -65,11 +66,9 @@ const Navigation = () => {
 
         <div className="items-center justify-between hidden gap-6 lg:flex">
           <p className="font-medium text-brand-navy">Pay your Tax</p>
-
           <Button className="font-semibold text-white rounded-lg bg-brand-cyan hover:bg-brand-cyan/90">
             Login
           </Button>
-
           <Button
             size="lg"
             variant="outline"
@@ -79,12 +78,10 @@ const Navigation = () => {
           </Button>
         </div>
 
-        <Button
-          variant="ghost"
-          className="p-2 lg:hidden text-brand-navy hover:bg-slate-100"
-        >
-          <Menu size={32} />
-        </Button>
+        {/* mobile menu*/}
+        <div className="lg:hidden">
+          <MobileMenu items={menuItems} />
+        </div>
       </div>
     </div>
   );
