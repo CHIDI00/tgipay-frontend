@@ -1,7 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
 
-// Components
 import ReadyToTransform from "@/components/sections/Home/ReadyToTransform";
 import About_whoWeAre from "@/components/sections/WhoWeAre/About_whoWeAre";
 import HomeSectionForAbout from "@/components/sections/WhoWeAre/HomeSectionForAbout";
