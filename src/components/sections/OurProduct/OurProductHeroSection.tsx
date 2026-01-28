@@ -27,7 +27,8 @@ const OurProductHeroSection = () => {
             <div className="flex flex-wrap gap-4 pt-6">
               <Button
                 size="lg"
-                className="bg-hero-cyan hover:bg-hero-cyan/90 text-white font-semibold text-[15px] px-6 py-4 h-auto rounded-lg"
+                className="bg-hero-cyan hover:bg-hero-cyan/90 text-white font-semibold text-[15px] px-6 py-4 h-auto rounded-lg 
+                 transition-all duration-300 transform hover:-translate-y-1"
               >
                 Create Free Account
               </Button>

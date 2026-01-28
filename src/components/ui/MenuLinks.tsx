@@ -54,7 +54,7 @@ const MenuLink = ({
       ref={containerRef}
       href={href}
       onClick={onClick}
-      className="relative block py-1 overflow-hidden text-[1.5rem] font-medium transition-colors text-brand-navy hover:text-brand-cyan hover:text-[2rem]"
+      className="relative block py-1 overflow-hidden text-[1.2rem] font-medium text-brand-navy hover:text-brand-cyan hover:text-[1.5rem] transition-all duration-300 transform hover:-translate-y-[.15rem]"
     >
       <span className="sr-only">{children}</span>
 
