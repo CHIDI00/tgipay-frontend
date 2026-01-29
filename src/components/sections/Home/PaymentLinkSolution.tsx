@@ -34,11 +34,11 @@ const PaymentLinkSolution = () => {
               </span>
             </div>
 
-            <h2 className=" font-bold text-[28px] md:text-[36px] leading-[30px] text-brand-navy">
+            <h2 className=" font-bold text-[23px] md:text-[36px] leading-[30px] text-brand-navy">
               Payment Link Solution
             </h2>
 
-            <p className=" font-normal text-[16px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
+            <p className=" font-normal text-[14px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
               TGIPAY takes cognizance of merchants that may not want to have a
               website and will depend on us as their payment gateway to make
               payment collections accessible to them. So, we create a payment

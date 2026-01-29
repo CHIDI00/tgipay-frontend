@@ -18,7 +18,7 @@ const WeEmpowerBusiness = () => {
               <span className="text-brand-cyan">secure payment systems</span>
             </h1>
 
-            <p className="text-white font-light text-center md:text-[24px] text-[16px]">
+            <p className="text-white font-light text-center md:text-[24px] text-[14px]">
               helping you collect payments, confirm transactions instantly,
               track financial activities, and grow with unmatched efficiency.
             </p>

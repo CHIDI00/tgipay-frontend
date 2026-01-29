@@ -40,7 +40,7 @@ const ReadyToTransform = () => {
       ref={containerRef}
       className="relative w-full lg:py-0 lg:pt-36 bg-brand-cyan overflow-hidden"
     >
-      <div className="absolute right-20 z-0  -translate-y-1/2 pointer-events-none top-[25%]">
+      <div className="absolute right-20 z-0 translate-x-1/2 -translate-y-1/2 pointer-events-none top-[25%]">
         <div className="relative flex items-center justify-center">
           <div className="ripple-ring absolute w-[25rem] h-[25rem] border-2 border-gray-200/20 rounded-full shadow-lg" />
           <div className="ripple-ring absolute w-[45rem] h-[45rem] border-[3px] border-gray-200/20 rounded-full shadow-lg" />

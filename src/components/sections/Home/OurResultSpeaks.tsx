@@ -52,12 +52,12 @@ const OurResultSpeaks = () => {
   return (
     <section className="px-4 py-24 bg-brand-navy sm:px-6 lg:px-8">
       <div className="max-w-[90rem] mx-auto">
-        {/* Heading */}
+        {/* heading */}
         <h2 className="text-white text-center font-bold text-3xl sm:text-5xl lg:text-[55px] leading-tight lg:leading-[60px] mb-20 max-w-5xl mx-auto">
           Our results speak for themselves, check out the numbers.
         </h2>
 
-        {/* Stats Grid */}
+        {/* stats grid */}
         <div
           ref={containerRef}
           className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12"

@@ -83,7 +83,7 @@ const WeEmpowerBusinessInOurProduct = () => {
               <span className="text-brand-cyan">secure payment systems</span>
             </h1>
 
-            <p className="text-slate-600 font-normal text-center md:text-[20px] text-[16px] max-w-2xl leading-relaxed">
+            <p className="text-slate-600 font-normal text-center md:text-[20px] text-[14px] max-w-2xl leading-relaxed">
               Helping you collect payments, confirm transactions instantly,
               track financial activities, and grow with unmatched efficiency.
             </p>
