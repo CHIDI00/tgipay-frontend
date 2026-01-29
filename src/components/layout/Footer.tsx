@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLenis } from "lenis/react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import whiteLogo from "../../../public/TGIWhiteLogo.svg";
 import facebook from "../../../public/facebook.svg";
@@ -16,7 +16,6 @@ import applestore from "../../../public/applestore.svg";
 const Footer = () => {
   const lenis = useLenis();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   // handle scroll when page load
   useEffect(() => {
@@ -35,7 +34,7 @@ const Footer = () => {
         }, 100);
       }
     }
-  }, [lenis, pathname, searchParams]);
+  }, [lenis, pathname]);
 
   // handle lick click on same page navigation
   const handleScroll = (
