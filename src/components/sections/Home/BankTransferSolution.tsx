@@ -10,7 +10,7 @@ import FloatingAnimation from "@/components/ui/FloatingAnimation";
 
 const BankTransferSolution = () => {
   return (
-    <div className="w-full py-20 lg:py-24">
+    <div id="bank-transfer" className="w-full py-20 lg:py-24">
       <div className="max-w-[90rem] px-4 mx-auto">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
           {/* content */}

@@ -45,7 +45,7 @@ const FadeInAnimation = ({
         // scroll effect
         scrollTrigger: {
           trigger: el,
-          start: "top 80%",
+          start: "top 77%",
           toggleActions: "play none none reverse",
         },
       };

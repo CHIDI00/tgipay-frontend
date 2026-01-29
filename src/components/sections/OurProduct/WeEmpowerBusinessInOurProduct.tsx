@@ -25,7 +25,7 @@ const WeEmpowerBusinessInOurProduct = () => {
         ease: "elastic.out(1, 0.6)",
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 75%",
+          start: "top 60%",
           toggleActions: "play none none reverse",
         },
       });
@@ -40,7 +40,7 @@ const WeEmpowerBusinessInOurProduct = () => {
         ease: "elastic.out(1, 0.6)",
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 75%",
+          start: "top 60%",
           toggleActions: "play none none reverse",
         },
       });
@@ -54,20 +54,20 @@ const WeEmpowerBusinessInOurProduct = () => {
       className="relative w-full py-32 overflow-hidden bg-white"
     >
       {/* left rings */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none z-0">
+      <div className="absolute left-0 z-0 -translate-x-1/2 -translate-y-1/2 pointer-events-none top-1/2">
         <div className="relative flex items-center justify-center">
           <div className="ring-left absolute w-[25rem] h-[25rem] border-2 border-brand-cyan/80 rounded-full" />
-          <div className="ring-left absolute w-[45rem] h-[45rem] border-2 border-brand-cyan/80 rounded-full" />
-          <div className="ring-left absolute w-[65rem] h-[65rem] border-2 border-brand-cyan/80 rounded-full" />
+          <div className="ring-left absolute w-[45rem] h-[45rem] border-[3px] border-brand-cyan/80 rounded-full" />
+          <div className="ring-left absolute w-[65rem] h-[65rem] border-[4.7px] border-brand-cyan/80 rounded-full" />
         </div>
       </div>
 
       {/* right rings */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 pointer-events-none z-0">
+      <div className="absolute right-0 z-0 translate-x-1/2 -translate-y-1/2 pointer-events-none top-1/2">
         <div className="relative flex items-center justify-center">
           <div className="ring-right absolute w-[25rem] h-[25rem] border-2 border-brand-cyan/80 rounded-full" />
-          <div className="ring-right absolute w-[45rem] h-[45rem] border-2 border-brand-cyan/80 rounded-full" />
-          <div className="ring-right absolute w-[65rem] h-[65rem] border-2 border-brand-cyan/80 rounded-full" />
+          <div className="ring-right absolute w-[45rem] h-[45rem] border-[3px] border-brand-cyan/80 rounded-full" />
+          <div className="ring-right absolute w-[65rem] h-[65rem] border-[4.7px] border-brand-cyan/80 rounded-full" />
         </div>
       </div>
 
@@ -89,7 +89,7 @@ const WeEmpowerBusinessInOurProduct = () => {
             </p>
 
             <div>
-              <Button className="px-10 py-7 text-lg font-semibold bg-brand-navy hover:bg-brand-navy/90 text-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <Button className="px-10 text-lg font-semibold text-white transition-all duration-300 transform rounded-lg shadow-xl py-7 bg-brand-navy hover:bg-brand-navy/90 hover:shadow-2xl hover:-translate-y-1">
                 Learn more
               </Button>
             </div>

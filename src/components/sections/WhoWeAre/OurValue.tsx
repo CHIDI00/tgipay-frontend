@@ -77,7 +77,11 @@ const OurValue = () => {
   );
 
   return (
-    <div ref={containerRef} className="w-full py-20 bg-white lg:py-24">
+    <div
+      id="our-values"
+      ref={containerRef}
+      className="w-full py-20 bg-white lg:py-24"
+    >
       <div className="max-w-[90rem] px-4 mx-auto">
         <div className="flex flex-col space-y-12">
           <h2 className="text-4xl font-bold md:text-5xl text-brand-navy">

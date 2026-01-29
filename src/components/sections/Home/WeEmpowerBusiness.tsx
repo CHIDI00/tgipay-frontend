@@ -6,7 +6,7 @@ import React from "react";
 
 const WeEmpowerBusiness = () => {
   return (
-    <div className="w-full py-24 bg-brand-navy">
+    <div id="why-us" className="w-full py-24 bg-brand-navy">
       <div className="max-w-[90rem] px-4 mx-auto">
         <div className="flex flex-col items-center justify-center lg:w-[45%] md:w-[60%] w-full mx-auto">
           <FadeInAnimation
