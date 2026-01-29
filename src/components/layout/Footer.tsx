@@ -98,7 +98,9 @@ const Footer = () => {
     { icon: x, label: "X" },
   ];
 
-  const renderTheFooterLinks = (links: { label: string; href: string }[]) => (
+  const renderingTheFooterLinks = (
+    links: { label: string; href: string }[],
+  ) => (
     <ul className="space-y-1">
       {links.map((link) => (
         <li key={link.label}>
@@ -178,19 +180,19 @@ const Footer = () => {
 
           <div className="col-span-1">
             <h3 className="mb-4 text-xl font-semibold text-white">About us</h3>
-            {renderTheFooterLinks(aboutUsLinks)}
+            {renderingTheFooterLinks(aboutUsLinks)}
           </div>
           <div className="col-span-1">
             <h3 className="mb-4 text-xl font-semibold text-white">Products</h3>
-            {renderTheFooterLinks(productsLinks)}
+            {renderingTheFooterLinks(productsLinks)}
           </div>
           <div className="col-span-1">
             <h3 className="mb-4 text-xl font-semibold text-white">Security</h3>
-            {renderTheFooterLinks(securityLinks)}
+            {renderingTheFooterLinks(securityLinks)}
           </div>
           <div className="col-span-1">
             <h3 className="mb-4 text-xl font-semibold text-white">Support</h3>
-            {renderTheFooterLinks(supportLinks)}
+            {renderingTheFooterLinks(supportLinks)}
           </div>
         </div>
       </div>
