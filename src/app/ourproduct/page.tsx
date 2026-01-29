@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Our Products | TGIPay",
     description: "Empowering businesses with secure, reliable payment systems.",
-    type: "website",
   },
 };
 
