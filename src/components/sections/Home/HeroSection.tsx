@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden ">
         <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2">
           {/* left content */}
-          <div className="py-[4.4rem] md:space-y-14 space-y-5 ">
+          <div className="py-[4.4rem] md:space-y-14 space-y-3 ">
             <h1 className="font-bold text-[30px] md:text-[60px] lg:text-[65px] leading-tight lg:leading-[70px]">
               <span className="block text-hero-navy">
                 {" "}
@@ -72,7 +72,7 @@ const HeroSection = () => {
             </h1>
 
             <FadeInAnimation delay={0.5}>
-              <p className="font-medium text-[16px] md:text-[20px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
+              <p className="font-medium text-[14px] md:text-[20px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
                 Experience payments without boundaries. We offer fast, secure,
                 and frictionless transactions for businesses and individuals.
                 You can focus on growing while we handle the payments.
@@ -82,18 +82,18 @@ const HeroSection = () => {
             <FadeInAnimation
               delay={1}
               stagger={0.2}
-              className="flex flex-wrap gap-4 pt-6"
+              className="flex  gap-4 pt-6"
             >
               <Button
                 size="lg"
-                className="bg-hero-cyan hover:bg-hero-cyan/90 text-white font-semibold text-[15px] px-6 py-4 h-auto rounded-lg"
+                className="bg-hero-cyan hover:bg-hero-cyan/90 text-white font-semibold md:text-[15px] text-[13px] px-6 py-4 h-auto rounded-lg"
               >
                 Create Free Account
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-hero-navy text-hero-navy hover:bg-gray-50 font-semibold text-[15px] px-6 py-4 h-auto rounded-lg"
+                className="border-2 border-hero-navy text-hero-navy hover:bg-gray-50 font-semibold md:text-[15px] text-[13px] px-6 py-4 h-auto rounded-lg"
               >
                 Learn more
               </Button>
@@ -113,7 +113,7 @@ const HeroSection = () => {
                   alt="Payment solutions professional"
                   width={1000}
                   height={1000}
-                  className="object-cover w-full h-full lg:h-auto lg:rounded-none rounded-b-[50px]"
+                  className="object-cover w-full h-full lg:h-auto "
                   priority
                 />
               </div>
