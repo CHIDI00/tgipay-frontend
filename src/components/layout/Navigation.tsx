@@ -10,7 +10,7 @@ const Navigation = () => {
   const menuItems = [
     { label: "Home", link: "/" },
     { label: "Who We Are", link: "/whoWeAre" },
-    { label: "Our Product", link: "/our_product" },
+    { label: "Our Product", link: "/ourProduct" },
     { label: "Our Pricing", link: "/ourPricing" },
     { label: "Contact Us", link: "/contactUs" },
   ];

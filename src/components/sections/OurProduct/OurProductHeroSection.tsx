@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import Image from "next/image";
