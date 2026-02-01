@@ -16,7 +16,7 @@ const PricingSection = () => {
           </h1>
         </div>
 
-        <div className="grid max-w-5xl grid-cols-1 gap-8 mx-auto mb-16 lg:grid-cols-2 lg:gap-16">
+        <div className="grid max-w-5xl grid-cols-1 gap-8 mx-auto mb-16 md:grid-cols-2 lg:gap-16">
           {/* local payments card */}
           <Card className="bg-white rounded-[30px] shadow-2xl border-0 p-8 lg:p-10 hover:-translate-y-2 transition-transform duration-300">
             <CardContent className="p-0 space-y-6">
