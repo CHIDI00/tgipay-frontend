@@ -24,7 +24,10 @@ const VisonAndMission = () => {
         <div className="relative grid grid-cols-1 gap-12 md:grid-cols-2 lg:gap-24">
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-slate-300/80 -translate-x-1/2" />
 
-          <div className="flex flex-col items-start justify-start space-y-6">
+          <div
+            id="mission"
+            className="flex flex-col items-start justify-start space-y-6"
+          >
             <h3 className="text-4xl font-bold text-brand-cyan md:text-5xl">
               Mission
             </h3>
@@ -39,7 +42,10 @@ const VisonAndMission = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-start justify-start space-y-6">
+          <div
+            id="vision"
+            className="flex flex-col items-start justify-start space-y-6"
+          >
             <h3 className="text-4xl font-bold text-brand-cyan md:text-5xl">
               Vision
             </h3>

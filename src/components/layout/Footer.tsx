@@ -98,7 +98,7 @@ const Footer = () => {
     { icon: x, label: "X" },
   ];
 
-  const renderingTheFooterLinks = (
+  const renderingTheFooterLinksFor = (
     links: { label: string; href: string }[],
   ) => (
     <ul className="space-y-1">
@@ -120,7 +120,7 @@ const Footer = () => {
     <footer className="w-full py-16 bg-brand-navy">
       <div className="mx-auto max-w-[90rem] px-4 lg:my-20 my-2">
         <div className="grid grid-cols-1 gap-12 mb-8 lg:grid-cols-5">
-          {/* brand column */}
+          {/* brand logo */}
           <div className="flex flex-col gap-4 mb-6">
             <div className="col-span-1">
               <Image
@@ -180,19 +180,19 @@ const Footer = () => {
 
           <div className="col-span-1">
             <h3 className="mb-4 text-xl font-semibold text-white">About us</h3>
-            {renderingTheFooterLinks(aboutUsLinks)}
+            {renderingTheFooterLinksFor(aboutUsLinks)}
           </div>
           <div className="col-span-1">
             <h3 className="mb-4 text-xl font-semibold text-white">Products</h3>
-            {renderingTheFooterLinks(productsLinks)}
+            {renderingTheFooterLinksFor(productsLinks)}
           </div>
           <div className="col-span-1">
             <h3 className="mb-4 text-xl font-semibold text-white">Security</h3>
-            {renderingTheFooterLinks(securityLinks)}
+            {renderingTheFooterLinksFor(securityLinks)}
           </div>
           <div className="col-span-1">
             <h3 className="mb-4 text-xl font-semibold text-white">Support</h3>
-            {renderingTheFooterLinks(supportLinks)}
+            {renderingTheFooterLinksFor(supportLinks)}
           </div>
         </div>
       </div>
