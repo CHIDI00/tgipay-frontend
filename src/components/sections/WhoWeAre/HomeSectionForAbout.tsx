@@ -8,9 +8,9 @@ import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const HomeSectionForAbout = () => {
   return (
-    <section className="w-full bg-brand-navy">
+    <section className="w-full lg:max-h-[60rem] h-[100dvh] bg-brand-navy">
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden">
-        <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className="grid items-center w-full h-full grid-cols-1 gap-5 lg:grid-cols-2">
           {/* left content */}
           <FadeInAnimation
             stagger={0.2}
@@ -53,7 +53,7 @@ const HomeSectionForAbout = () => {
                 alt="Payment solutions professional"
                 width={1000}
                 height={1000}
-                className="w-full h-full object-cover"
+                className="object-cover w-full h-full"
                 priority
               />
             </FadeInAnimation>
