@@ -14,7 +14,7 @@ const PaymentLinkSolution = () => {
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
           {/* content */}
           <FadeInAnimation
-            stagger={0.2}
+            stagger={0.3}
             className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start"
           >
             <div className="inline-flex items-center gap-[10px] px-4 py-2 border border-[#44c3e3] rounded-[20px]">

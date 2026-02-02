@@ -9,7 +9,7 @@ import personinproductpage from "../../../../public/personinproductpage.jpg";
 
 const OurProductHeroSection = () => {
   return (
-    <section className="w-full lg:h-[49rem] h-[100dvh] bg-brand-navy ">
+    <section className="w-full lg:max-h-[55rem] h-[100dvh] bg-brand-navy ">
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden ">
         <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2 lg:gap-56">
           {/* left content */}
