@@ -101,13 +101,13 @@ const Footer = () => {
   const renderingTheFooterLinksFor = (
     links: { label: string; href: string }[],
   ) => (
-    <ul className="space-y-1">
+    <ul className="space-y-5">
       {links.map((link) => (
         <li key={link.label}>
           <Link
             href={link.href}
             onClick={(e) => handleScroll(e, link.href)}
-            className="text-xl font-light text-blue-200 transition-colors hover:text-white"
+            className="text-md font-light text-blue-200 transition-colors hover:text-white"
           >
             {link.label}
           </Link>

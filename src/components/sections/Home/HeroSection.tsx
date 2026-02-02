@@ -12,7 +12,7 @@ import FloatingAnimation from "@/components/ui/FloatingAnimation";
 
 const HeroSection = () => {
   return (
-    <section className="w-full lg:h-[49rem] h-[100dvh] bg-[#F9FAFB] ">
+    <section className="w-full  h-[100dvh] bg-[#F9FAFB] ">
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden ">
         <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2">
           {/* left content */}
@@ -82,7 +82,7 @@ const HeroSection = () => {
             <FadeInAnimation
               delay={1}
               stagger={0.2}
-              className="flex  gap-4 pt-6"
+              className="flex gap-4 pt-6"
             >
               <Button
                 size="lg"

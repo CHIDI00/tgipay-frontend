@@ -3,11 +3,10 @@
 import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
-
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 import MenuLink from "../ui/MenuLinks";
-import Image from "next/image";
 import primaryLogo from "../../../public/TGIPrimaryLogo.svg";
 import cbnLogo from "../../../public/cbnLogo.svg";
 
@@ -16,7 +15,12 @@ interface MenuItem {
   link: string;
 }
 
-const MobileMenu = ({ items }: { items: MenuItem[] }) => {
+interface MobileMenuProps {
+  items: MenuItem[];
+  isDarkTheme: boolean;
+}
+
+const MobileMenu = ({ items, isDarkTheme }: MobileMenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -35,11 +39,15 @@ const MobileMenu = ({ items }: { items: MenuItem[] }) => {
     };
   }, [isOpen]);
 
+  const iconColorClass = isDarkTheme
+    ? "text-white hover:bg-white/10"
+    : "text-brand-navy hover:bg-slate-100";
+
   return (
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="p-2 transition-colors rounded-md text-brand-navy hover:bg-slate-100"
+        className={`p-2 transition-colors rounded-md ${iconColorClass}`}
         aria-label="Open menu"
       >
         <Menu size={32} />
@@ -90,7 +98,7 @@ const MobileMenu = ({ items }: { items: MenuItem[] }) => {
                 </div>
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="p-2 transition-colors rounded-full text-slate-500"
+                  className="p-2 transition-colors rounded-full text-slate-500 hover:bg-slate-100"
                 >
                   <X size={28} />
                 </button>

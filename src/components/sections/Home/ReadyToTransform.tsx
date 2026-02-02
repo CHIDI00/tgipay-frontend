@@ -22,7 +22,7 @@ const ReadyToTransform = () => {
         x: 150,
         scale: 0.5,
         opacity: 0,
-        duration: 1.5,
+        duration: 1.9,
         stagger: 0.15,
         ease: "elastic.out(1, 0.6)",
         scrollTrigger: {
@@ -37,18 +37,29 @@ const ReadyToTransform = () => {
 
   return (
     <div
-      ref={containerRef}
-      className="relative w-full lg:py-0 lg:pt-36 bg-brand-cyan overflow-hidden"
+      // ref={containerRef}
+      className=" w-full lg:py-0 lg:pt-0 px-4  overflow-hidden"
     >
-      <div className="absolute right-20 z-0 translate-x-1/2 -translate-y-1/2 pointer-events-none top-[25%]">
+      {/* <div className="absolute right-20 z-0 translate-x-1/2 -translate-y-1/2 pointer-events-none top-[25%]">
         <div className="relative flex items-center justify-center">
           <div className="ripple-ring absolute w-[25rem] h-[25rem] border-2 border-gray-200/20 rounded-full shadow-lg" />
           <div className="ripple-ring absolute w-[45rem] h-[45rem] border-[3px] border-gray-200/20 rounded-full shadow-lg" />
           <div className="ripple-ring absolute w-[65rem] h-[65rem] border-[4.7px] border-gray-200/20 rounded-full shadow-lg" />
         </div>
-      </div>
+      </div> */}
 
-      <div className="max-w-[90rem] px-4 mx-auto ">
+      <div
+        ref={containerRef}
+        className="relative max-w-[90rem] px-4 mx-auto bg-brand-navy rounded-2xl md:pt-16 pt-7 my-20 shadow-2xl overflow-hidden"
+      >
+        <div className="absolute right-20 z-0 translate-x-1/2 -translate-y-1/2 pointer-events-none top-[25%]">
+          <div className="relative flex items-center justify-center">
+            <div className="ripple-ring absolute w-[25rem] h-[25rem] border-2 border-gray-200/20 rounded-full shadow-lg" />
+            <div className="ripple-ring absolute w-[45rem] h-[45rem] border-[3px] border-gray-200/20 rounded-full shadow-lg" />
+            <div className="ripple-ring absolute w-[65rem] h-[65rem] border-[4.7px] border-gray-200/20 rounded-full shadow-lg" />
+          </div>
+        </div>
+
         <div className="flex flex-col-reverse items-center justify-center w-full gap-10 md:flex-row">
           {/* Card Image */}
           <FadeInAnimation
@@ -81,7 +92,7 @@ const ReadyToTransform = () => {
 
             <Button
               size="lg"
-              className="rounded-lg py-7 bg-brand-navy hover:bg-slate-700"
+              className="rounded-lg py-7 bg-brand-cyan hover:bg-slate-700"
             >
               Create a Free Account Now!
             </Button>

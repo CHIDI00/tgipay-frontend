@@ -8,7 +8,7 @@ import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const HomeSectionForAbout = () => {
   return (
-    <section className="w-full lg:h-[49rem] h-[100dvh] bg-brand-navy">
+    <section className="w-full bg-brand-navy">
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden">
         <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2 gap-5">
           {/* left content */}
