@@ -107,7 +107,7 @@ const Footer = () => {
           <Link
             href={link.href}
             onClick={(e) => handleScroll(e, link.href)}
-            className="text-md font-light text-blue-200 transition-colors hover:text-white"
+            className="font-light text-blue-200 transition-colors text-md hover:text-white"
           >
             {link.label}
           </Link>
@@ -119,7 +119,7 @@ const Footer = () => {
   return (
     <footer className="w-full py-16 bg-brand-navy">
       <div className="mx-auto max-w-[90rem] px-4 lg:my-20 my-2">
-        <div className="grid grid-cols-1 gap-12 mb-8 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-12 mb-8 md:grid-cols-3 lg:grid-cols-5">
           {/* brand logo */}
           <div className="flex flex-col gap-4 mb-6">
             <div className="col-span-1">
@@ -128,6 +128,7 @@ const Footer = () => {
                 alt="TGI Pay Logo"
                 width={140}
                 height={45}
+                className="w-auto"
               />
             </div>
 

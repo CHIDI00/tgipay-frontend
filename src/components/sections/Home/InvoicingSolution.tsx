@@ -52,7 +52,7 @@ const InvoicingSolution = () => {
               Invoicing Solution
             </h2>
 
-            <p className=" font-normal text-[14px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
+            <p className="font-normal text-[14px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
               Generate invoices through simple input of item and price, our
               system creates an invoice with which the customer can make
               payments, track payments and receive instant acknowledgment once

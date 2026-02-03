@@ -93,6 +93,7 @@ const MobileMenu = ({ items, isDarkTheme }: MobileMenuProps) => {
                       alt="CBN Logo"
                       width={12}
                       height={12}
+                      className="w-auto"
                     />
                   </div>
                 </div>

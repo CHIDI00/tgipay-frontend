@@ -56,10 +56,10 @@ const ContactUsSection = () => {
       <div className="max-w-[90rem] mx-auto px-4 pt-32 pb-20 lg:pt-40">
         <FadeInAnimation>
           <div className="flex flex-col items-center justify-center mb-16 text-center">
-            <h1 className="mb-4 text-4xl font-bold md:text-5xl text-brand-navy">
+            <h1 className="mb-4 text-3xl font-bold md:text-5xl text-brand-navy">
               Contact Us
             </h1>
-            <p className="max-w-2xl text-lg font-medium text-slate-600">
+            <p className="max-w-2xl font-medium text-md text-slate-600">
               Kindly direct all complaints & enquiries to our team of competent
               executives for prompt assistance.
             </p>

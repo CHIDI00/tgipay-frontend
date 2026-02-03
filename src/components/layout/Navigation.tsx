@@ -55,7 +55,13 @@ const Navigation = () => {
             <p className={`text-[0.6rem] font-medium ${textColor} opacity-90`}>
               Licensed by CBN
             </p>
-            <Image src={cbnLogo} alt="CBN Logo" width={12} height={12} />
+            <Image
+              src={cbnLogo}
+              alt="CBN Logo"
+              width={12}
+              height={12}
+              className="w-auto"
+            />
           </div>
         </div>
 

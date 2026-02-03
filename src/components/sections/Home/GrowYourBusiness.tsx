@@ -44,7 +44,10 @@ const GrowYourBusiness = () => {
             </div>
           </FloatingAnimation>
 
-          <FadeInAnimation stagger={0.2} className="space-y-8">
+          <FadeInAnimation
+            stagger={0.2}
+            className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start"
+          >
             <div className="inline-flex items-center gap-[10px] px-4 py-2 border border-[#44c3e3] rounded-[20px]">
               <Image
                 src={arrowRight}

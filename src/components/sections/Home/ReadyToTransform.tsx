@@ -38,7 +38,7 @@ const ReadyToTransform = () => {
   return (
     <div
       // ref={containerRef}
-      className=" w-full lg:py-0 lg:pt-0 px-4  overflow-hidden"
+      className="w-full px-4 overflow-hidden  lg:py-0 lg:pt-0"
     >
       {/* <div className="absolute right-20 z-0 translate-x-1/2 -translate-y-1/2 pointer-events-none top-[25%]">
         <div className="relative flex items-center justify-center">
@@ -60,7 +60,7 @@ const ReadyToTransform = () => {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse items-center justify-center w-full gap-10 md:flex-row">
+        <div className="flex flex-col-reverse items-center justify-center w-full gap-10 lg:flex-row">
           {/* Card Image */}
           <FadeInAnimation
             duration={1.2}
