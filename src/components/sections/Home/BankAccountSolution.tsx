@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import bankaccountsolutionRaw from "../../../../public/bankaccountsolutionRaw.png";
+import bankaccountsolutionRaw from "../../../../public/bankaccountsolutionRaw.webp";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const BankAccountSolution = () => {

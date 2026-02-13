@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import ussdRaw from "../../../../public/ussdRaw.png";
+import ussdRaw from "../../../../public/ussdRaw.webp";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const OfflinePayment = () => {

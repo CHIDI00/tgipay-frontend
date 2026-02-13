@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
-import herosectionperson from "../../../../public/personinwhoweareRaw.jpg";
+import herosectionperson from "../../../../public/personinwhoweareRaw.webp";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const HomeSectionForAbout = () => {
@@ -55,7 +55,6 @@ const HomeSectionForAbout = () => {
                 height={1000}
                 loading="lazy"
                 className="object-cover w-full h-full"
-                priority
               />
             </FadeInAnimation>
           </div>

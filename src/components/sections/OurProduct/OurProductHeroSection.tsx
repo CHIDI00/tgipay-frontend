@@ -5,7 +5,7 @@ import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import Image from "next/image";
 import React from "react";
 
-import personinproductpage from "../../../../public/personinproductpageRaw.png";
+import personinproductpage from "../../../../public/personinproductpageRaw.webp";
 
 const OurProductHeroSection = () => {
   return (
@@ -51,7 +51,6 @@ const OurProductHeroSection = () => {
                 loading="lazy"
                 className="w-[100%] h-auto"
                 quality={100}
-                priority
               />
             </FadeInAnimation>
           </div>

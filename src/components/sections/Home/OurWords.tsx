@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 
-import ourwordsRaw from "../../../../public/ourwordsRaw.png";
+import ourwordsRaw from "../../../../public/ourwordsRaw.webp";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const OurWords = () => {

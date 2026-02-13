@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import paymentlinksolutionRaw from "../../../../public/paymentlinksolutionRaw.png";
+import paymentlinksolutionRaw from "../../../../public/paymentlinksolutionRaw.webp";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const PaymentLinkSolution = () => {

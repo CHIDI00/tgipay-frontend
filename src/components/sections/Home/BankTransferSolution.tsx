@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import transferimageRaw from "../../../../public/transferimageRaw.jpg";
+import transferimageRaw from "../../../../public/transferimageRaw.webp";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import FloatingAnimation from "@/components/ui/FloatingAnimation";
 
