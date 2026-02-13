@@ -5,7 +5,7 @@ import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import Image from "next/image";
 import React from "react";
 
-import personinproductpage from "../../../../public/personinproductpage.jpg";
+import personinproductpage from "../../../../public/personinproductpageRaw.png";
 
 const OurProductHeroSection = () => {
   return (

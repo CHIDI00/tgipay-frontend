@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-import cards1 from "../../../../public/cards1.svg";
+import cardsRaw from "../../../../public/cardsRaw.png";
 import arrowRight from "../../../../public/arrow-right.svg";
 import SplitText from "@/components/ui/SplitText";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
@@ -35,7 +35,7 @@ const GrowYourBusiness = () => {
           <FloatingAnimation>
             <div className="flex justify-center lg:justify-start">
               <Image
-                src={cards1}
+                src={cardsRaw}
                 alt="Debit cards illustration"
                 width={510}
                 height={383}

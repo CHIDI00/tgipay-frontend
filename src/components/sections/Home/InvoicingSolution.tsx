@@ -4,25 +4,38 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import invoicingsolution from "../../../../public/invoicingsolution.svg";
+import ogimageRaw from "../../../../public/og-imageRaw.jpg";
+import mobilePhone from "../../../../public/mobilephoneRaw.png";
+
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const InvoicingSolution = () => {
   return (
-    <div id="invoicing" className="w-full py-20 lg:py-0 lg:pt-20 bg-[#F9F9F9]">
+    <div
+      id="invoicing"
+      className="w-full py-20  lg:py-20 bg-[#F9F9F9] overflow-hidden"
+    >
       <div className="max-w-[90rem] px-4 mx-auto ">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
           {/* card image */}
           <FadeInAnimation
             duration={1}
-            className="flex justify-center lg:justify-start"
+            className="relative flex justify-start lg:justify-start"
           >
             <Image
-              src={invoicingsolution}
+              src={ogimageRaw}
               alt="Debit cards illustration"
-              width={620}
-              height={400}
-              className="w-full max-w-[620px] h-auto"
+              width={500}
+              height={300}
+              className="w-[70%] md:max-w-[500px] h-auto"
+            />
+
+            <Image
+              src={mobilePhone}
+              alt="Debit cards illustration"
+              width={400}
+              height={300}
+              className="absolute md:left-64 left-36 md:top-40 top-14 w-[60%] md:max-w-[400px] h-auto"
             />
           </FadeInAnimation>
 

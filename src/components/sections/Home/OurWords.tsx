@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 
-import ourwords from "../../../../public/ourwords.png";
+import ourwordsRaw from "../../../../public/ourwordsRaw.png";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const OurWords = () => {
@@ -34,7 +34,7 @@ const OurWords = () => {
             className="flex justify-center lg:justify-end"
           >
             <Image
-              src={ourwords}
+              src={ourwordsRaw}
               alt="Debit cards illustration"
               width={800}
               height={600}

@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import ussd from "../../../../public/ussd.svg";
+import ussdRaw from "../../../../public/ussdRaw.png";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const OfflinePayment = () => {
@@ -56,7 +56,7 @@ const OfflinePayment = () => {
             className="flex justify-center lg:justify-end"
           >
             <Image
-              src={ussd}
+              src={ussdRaw}
               alt="Debit cards illustration"
               width={650}
               height={400}

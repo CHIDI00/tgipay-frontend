@@ -118,7 +118,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full py-16 bg-brand-navy">
-      <div className="mx-auto max-w-[90rem] px-4 lg:my-20 my-2">
+      <div className="mx-auto max-w-[90rem] px-4 lg:my-10 my-2">
         <div className="grid grid-cols-1 gap-12 mb-8 md:grid-cols-3 lg:grid-cols-5">
           {/* brand logo */}
           <div className="flex flex-col gap-4 mb-6">
@@ -196,6 +196,19 @@ const Footer = () => {
             {renderingTheFooterLinksFor(supportLinks)}
           </div>
         </div>
+
+        {/* <div className="flex items-center justify-center w-full -top-10">
+          <h1 className="text-[25rem] font-bold">tgipay</h1>
+        </div> */}
+        {/* 
+        <div className="w-full flex justify-center items-center z-[4]">
+          <h1
+            className="lg:text-[25rem] md:text-[30rem] text-[7rem] font-bold leading-none bg-gradient-to-b from-[rgba(255,255,255,0.87)] to-[rgba(255,255,255,0.41)] bg-clip-text text-transparent"
+            data-aos="fade-up"
+          >
+            TGIPay
+          </h1>
+        </div> */}
       </div>
     </footer>
   );

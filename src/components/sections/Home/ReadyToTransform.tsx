@@ -5,7 +5,7 @@ import React, { useRef } from "react";
 
 import { Button } from "@/components/ui/button";
 
-import mobilephone from "../../../../public/mobilephone.svg";
+import mobilephoneRaw from "../../../../public/mobilephoneRaw.png";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -38,7 +38,7 @@ const ReadyToTransform = () => {
   return (
     <div
       // ref={containerRef}
-      className="w-full px-4 overflow-hidden  lg:py-0 lg:pt-0"
+      className="w-full px-4 overflow-hidden lg:py-0 lg:pt-0"
     >
       {/* <div className="absolute right-20 z-0 translate-x-1/2 -translate-y-1/2 pointer-events-none top-[25%]">
         <div className="relative flex items-center justify-center">
@@ -67,7 +67,7 @@ const ReadyToTransform = () => {
             className="flex justify-center lg:justify-start"
           >
             <Image
-              src={mobilephone}
+              src={mobilephoneRaw}
               alt="Debit cards illustration"
               width={400}
               height={400}

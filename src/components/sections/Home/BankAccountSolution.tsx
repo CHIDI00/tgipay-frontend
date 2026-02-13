@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import bankaccountsolution from "../../../../public/bankaccountsolution.svg";
+import bankaccountsolutionRaw from "../../../../public/bankaccountsolutionRaw.png";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const BankAccountSolution = () => {
@@ -18,7 +18,7 @@ const BankAccountSolution = () => {
             className="flex justify-center lg:justify-start"
           >
             <Image
-              src={bankaccountsolution}
+              src={bankaccountsolutionRaw}
               alt="Debit cards illustration"
               width={620}
               height={400}

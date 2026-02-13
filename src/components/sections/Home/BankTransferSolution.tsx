@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import transferimage from "../../../../public/transferimage.svg";
+import transferimageRaw from "../../../../public/transferimageRaw.jpg";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import FloatingAnimation from "@/components/ui/FloatingAnimation";
 
@@ -52,7 +52,7 @@ const BankTransferSolution = () => {
           {/* card image */}
           <FloatingAnimation className="flex justify-center lg:justify-end">
             <Image
-              src={transferimage}
+              src={transferimageRaw}
               alt="Debit cards illustration"
               width={650}
               height={400}

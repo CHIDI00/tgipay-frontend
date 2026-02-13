@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
-import herosectionperson from "../../../../public/personinwhoweare.svg";
+import herosectionperson from "../../../../public/personinwhoweareRaw.jpg";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const HomeSectionForAbout = () => {

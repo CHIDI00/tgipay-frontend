@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import paymentlinksolution from "../../../../public/paymentlinksolution.png";
+import paymentlinksolutionRaw from "../../../../public/paymentlinksolutionRaw.png";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
 const PaymentLinkSolution = () => {
@@ -57,7 +57,7 @@ const PaymentLinkSolution = () => {
             className="flex justify-center lg:justify-end"
           >
             <Image
-              src={paymentlinksolution}
+              src={paymentlinksolutionRaw}
               alt="Debit cards illustration"
               width={650}
               height={400}
