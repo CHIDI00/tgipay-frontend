@@ -39,6 +39,7 @@ const GrowYourBusiness = () => {
                 alt="Debit cards illustration"
                 width={510}
                 height={383}
+                loading="lazy"
                 className="w-full max-w-[510px] h-auto"
               />
             </div>

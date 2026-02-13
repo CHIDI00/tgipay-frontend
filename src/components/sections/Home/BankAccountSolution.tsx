@@ -22,6 +22,7 @@ const BankAccountSolution = () => {
               alt="Debit cards illustration"
               width={620}
               height={400}
+              loading="lazy"
               className="w-full max-w-[620px] h-auto"
             />
           </FadeInAnimation>

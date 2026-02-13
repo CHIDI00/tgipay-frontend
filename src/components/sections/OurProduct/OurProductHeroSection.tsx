@@ -48,6 +48,7 @@ const OurProductHeroSection = () => {
                 alt="Payment solutions professional"
                 width={1000}
                 height={700}
+                loading="lazy"
                 className="w-[100%] h-auto"
                 quality={100}
                 priority

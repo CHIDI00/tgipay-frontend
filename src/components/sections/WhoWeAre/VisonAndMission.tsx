@@ -60,6 +60,7 @@ const VisonAndMission = () => {
                 alt="Scan to pay"
                 width={400}
                 height={200}
+                loading="lazy"
                 className="object-cover w-full h-auto"
               />
             </div>

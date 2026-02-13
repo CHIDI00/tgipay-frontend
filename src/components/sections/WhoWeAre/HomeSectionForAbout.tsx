@@ -53,6 +53,7 @@ const HomeSectionForAbout = () => {
                 alt="Payment solutions professional"
                 width={1000}
                 height={1000}
+                loading="lazy"
                 className="object-cover w-full h-full"
                 priority
               />

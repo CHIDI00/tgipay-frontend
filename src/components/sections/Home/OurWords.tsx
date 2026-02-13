@@ -38,6 +38,7 @@ const OurWords = () => {
               alt="Debit cards illustration"
               width={800}
               height={600}
+              loading="lazy"
               className="w-full max-w-[800px] h-auto"
             />
           </FadeInAnimation>

@@ -71,6 +71,7 @@ const ReadyToTransform = () => {
               alt="Debit cards illustration"
               width={400}
               height={400}
+              loading="lazy"
               className="w-full max-w-[400px] h-auto"
             />
           </FadeInAnimation>
