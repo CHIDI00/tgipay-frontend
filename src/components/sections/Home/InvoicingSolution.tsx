@@ -4,8 +4,8 @@ import Image from "next/image";
 import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
-import ogimageRaw from "../../../../public/og-imageRaw.jpg";
-import mobilePhone from "../../../../public/mobilephoneRaw.png";
+import ogimageRaw from "../../../../public/og-imageRaw.webp";
+import mobilePhone from "../../../../public/mobilephoneRaw.webp";
 
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
