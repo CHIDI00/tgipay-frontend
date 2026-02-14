@@ -5,7 +5,7 @@ import React from "react";
 
 import arrowRight from "../../../../public/arrow-right.svg";
 import ogimageRaw from "../../../../public/og-imageRaw.webp";
-import mobilePhone from "../../../../public/mobilephoneRaw.webp";
+import mobilePhone from "../../../../public/tgiandroid.png";
 
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
@@ -33,9 +33,9 @@ const InvoicingSolution = () => {
             <Image
               src={mobilePhone}
               alt="Debit cards illustration"
-              width={400}
+              width={350}
               height={300}
-              className="absolute md:left-64 left-36 md:top-40 top-14 w-[60%] md:max-w-[400px] h-auto"
+              className="absolute md:left-72 left-36 md:top-40 top-14 w-[60%] md:max-w-[350px] h-auto"
             />
           </FadeInAnimation>
 

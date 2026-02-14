@@ -5,7 +5,7 @@ import React, { useRef } from "react";
 
 import { Button } from "@/components/ui/button";
 
-import mobilephoneRaw from "../../../../public/mobilephoneRaw.webp";
+import mobilephoneRaw from "../../../../public/tgiandroid.png";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
