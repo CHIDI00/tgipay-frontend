@@ -46,7 +46,7 @@ const HomeSectionForAbout = () => {
           <div className="relative flex items-end justify-center h-full">
             <FadeInAnimation
               duration={1}
-              className="relative w-full lg:h-[80%] h-full bg-green-500 overflow-hidden"
+              className="relative w-full lg:h-[80%] h-full overflow-hidden"
             >
               <Image
                 src={herosectionperson}

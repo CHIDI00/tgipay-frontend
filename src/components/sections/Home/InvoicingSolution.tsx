@@ -30,6 +30,10 @@ const InvoicingSolution = () => {
               className="w-[70%] md:max-w-[500px] h-auto"
             />
 
+            {/* <FadeInAnimation
+              duration={1.5}
+              className="absolute md:left-72 left-36 md:top-40 top-14 w-[60%] md:max-w-[350px] h-auto"
+            > */}
             <Image
               src={mobilePhone}
               alt="Debit cards illustration"
@@ -37,6 +41,7 @@ const InvoicingSolution = () => {
               height={300}
               className="absolute md:left-72 left-36 md:top-40 top-14 w-[60%] md:max-w-[350px] h-auto"
             />
+            {/* </FadeInAnimation> */}
           </FadeInAnimation>
 
           {/* Content */}
