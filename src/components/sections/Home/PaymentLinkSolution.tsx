@@ -13,7 +13,7 @@ const PaymentLinkSolution = () => {
   return (
     <div id="payment-link" className="w-full py-20 lg:py-24">
       <div className="max-w-[90rem] px-4 mx-auto">
-        <div className="grid items-center grid-cols-1 gap-8 lg:gap-24 lg:grid-cols-2">
+        <div className="grid items-center grid-cols-1 gap-12 lg:gap-24 lg:grid-cols-2">
           {/* content */}
           <FadeInAnimation
             stagger={0.3}
@@ -64,7 +64,7 @@ const PaymentLinkSolution = () => {
               width={500}
               height={400}
               loading="lazy"
-              className="w-full max-w-[500px] h-auto"
+              className="w-[90%] max-w-[500px] h-auto"
             />
 
             <Image
@@ -73,7 +73,7 @@ const PaymentLinkSolution = () => {
               width={300}
               height={100}
               loading="lazy"
-              className="absolute -left-32 w-full max-w-[300px] h-auto"
+              className="absolute md:-left-32 -left-0 md:w-full w-[50%] max-w-[300px] h-auto"
             />
           </FadeInAnimation>
         </div>
