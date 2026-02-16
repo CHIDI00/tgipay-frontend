@@ -34,7 +34,7 @@ const HomeSectionForAbout = () => {
             </p>
 
             <Link
-              href="merchant.tgipay.com"
+              href="https://merchant.tgipay.com"
               className="flex flex-wrap gap-4 pt-6"
             >
               <Button
