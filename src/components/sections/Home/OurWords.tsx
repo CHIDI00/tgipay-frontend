@@ -16,7 +16,7 @@ const OurWords = () => {
             stagger={0.7}
             className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start lg:mr-28"
           >
-            <h2 className="font-bold text-[23px] text-left md:text-[45px] lg:text-[55px] leading-tight text-brand-navy">
+            <h2 className="font-bold text-[23px] text-left md:text-[45px] lg:text-[45px] xl:text-[55px] leading-tight text-brand-navy">
               Don’t just take our words for it
             </h2>
 

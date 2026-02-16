@@ -66,7 +66,7 @@ const Footer = () => {
     { label: "Vision", href: "/whoWeAre#vision" },
     { label: "Mission", href: "/whoWeAre#mission" },
     { label: "Our Values", href: "/whoWeAre#our-values" },
-    { label: "Blog", href: "/blog" },
+    { label: "Blog", href: "/" },
   ];
 
   const productsLinks = [
@@ -79,23 +79,31 @@ const Footer = () => {
   ];
 
   const securityLinks = [
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Terms of Use", href: "/terms" },
-    { label: "PCI DSS", href: "#" },
+    { label: "Privacy Policy", href: "/" },
+    { label: "Terms of Use", href: "/" },
+    { label: "PCI DSS", href: "merchant.tgipay.com" },
   ];
 
   const supportLinks = [
-    { label: "Getting Started", href: "#" },
+    { label: "Getting Started", href: "merchant.tgipay.com" },
     { label: "Setting up Account", href: "#" },
-    { label: "Dashboard", href: "#" },
+    { label: "Dashboard", href: "merchant.tgipay.com" },
     { label: "Settlements", href: "#" },
     { label: "Disputes", href: "#" },
   ];
 
   const socialLinks = [
-    { icon: facebook, label: "Facebook" },
-    { icon: instagram, label: "Instagram" },
-    { icon: x, label: "X" },
+    {
+      icon: facebook,
+      label: "Facebook",
+      link: "https://www.facebook.com/share/1GT64NACh6/",
+    },
+    {
+      icon: instagram,
+      label: "Instagram",
+      link: "https://www.instagram.com/tgipay?igsh=MWh0cXVqb2NjNW94cA==",
+    },
+    { icon: x, label: "X", link: "https://x.com/tgipay" },
   ];
 
   const renderingTheFooterLinksFor = (
@@ -139,7 +147,7 @@ const Footer = () => {
               {socialLinks.map((social) => (
                 <Link
                   key={social.label}
-                  href="#"
+                  href={social.link}
                   className="transition-opacity hover:opacity-80"
                 >
                   <Image
@@ -154,7 +162,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="mb-3 text-sm font-medium text-white">
-                Get The TGI PAY Mobile App
+                Get The TGIPAY Mobile App
               </p>
               <div className="flex gap-2">
                 <Link href="#" className="transition-opacity hover:opacity-80">

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useRef } from "react";
+import Link from "next/link"; // Correct import for navigation
 
 import { Button } from "@/components/ui/button";
 
@@ -36,18 +37,7 @@ const ReadyToTransform = () => {
   );
 
   return (
-    <div
-      // ref={containerRef}
-      className="w-full px-4 overflow-hidden lg:py-0 lg:pt-0"
-    >
-      {/* <div className="absolute right-20 z-0 translate-x-1/2 -translate-y-1/2 pointer-events-none top-[25%]">
-        <div className="relative flex items-center justify-center">
-          <div className="ripple-ring absolute w-[25rem] h-[25rem] border-2 border-gray-200/20 rounded-full shadow-lg" />
-          <div className="ripple-ring absolute w-[45rem] h-[45rem] border-[3px] border-gray-200/20 rounded-full shadow-lg" />
-          <div className="ripple-ring absolute w-[65rem] h-[65rem] border-[4.7px] border-gray-200/20 rounded-full shadow-lg" />
-        </div>
-      </div> */}
-
+    <div className="w-full px-4 overflow-hidden lg:py-0 lg:pt-0">
       <div
         ref={containerRef}
         className="relative max-w-[90rem] px-4 mx-auto bg-brand-navy rounded-2xl md:pt-16 pt-7 my-20 shadow-2xl overflow-hidden"
@@ -91,12 +81,14 @@ const ReadyToTransform = () => {
               business grow. Start transforming your business today!
             </p>
 
-            <Button
-              size="lg"
-              className="rounded-lg py-7 bg-brand-cyan hover:bg-slate-700"
-            >
-              Create a Free Account Now!
-            </Button>
+            <Link href="https://merchant.tgipay.com">
+              <Button
+                size="lg"
+                className="rounded-lg py-7 bg-brand-cyan hover:bg-slate-700"
+              >
+                Create a Free Account Now!
+              </Button>
+            </Link>
           </FadeInAnimation>
         </div>
       </div>

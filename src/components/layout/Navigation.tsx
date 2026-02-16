@@ -66,33 +66,46 @@ const Navigation = () => {
         </div>
 
         <div
-          className={`items-center justify-between hidden gap-8 font-medium lg:flex ${textColor}`}
+          className={`items-center justify-between hidden gap-8 font-medium lg:flex xl:text-[16px] lg:text-[12px]  ${textColor}`}
         >
           {menuItems.map((item) => (
             <Link
               key={item.label}
               href={item.link}
-              className={`transition-colors ${hoverColor} ${pathname === item.link ? "text-brand-cyan font-bold" : ""}`}
+              className={`transition-colors ${hoverColor} ${pathname === item.link ? "text-brand-cyan font-bold " : ""}`}
             >
               {item.label}
             </Link>
           ))}
         </div>
 
-        <div className="items-center justify-between hidden gap-6 lg:flex">
-          <p className={`font-medium ${textColor}`}>Pay your Tax</p>
+        <div className="items-center justify-between hidden gap-6 lg:flex xl:text-[16px] lg:text-[12px]">
+          <div className="relative h-6 overflow-hidden cursor-pointer group w-28">
+            <span
+              className={`absolute inset-0 flex items-center transition-transform duration-300 ease-in-out group-hover:-translate-y-full font-medium ${textColor}`}
+            >
+              Pay your Tax
+            </span>
+            <span className="absolute inset-0 flex items-center font-medium transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0 text-brand-cyan">
+              Coming Soon
+            </span>
+          </div>
 
-          <Button className={`font-semibold rounded-lg ${loginBtnStyle}`}>
-            Login
-          </Button>
+          <Link href="https://merchant.tgipay.com">
+            <Button className={`font-semibold rounded-lg ${loginBtnStyle}`}>
+              Login
+            </Button>
+          </Link>
 
-          <Button
-            size="lg"
-            variant="outline"
-            className={`font-semibold rounded-lg ${startBtnStyle}`}
-          >
-            Start free account
-          </Button>
+          <Link href="https://merchant.tgipay.com">
+            <Button
+              size="lg"
+              variant="outline"
+              className={`font-semibold rounded-lg ${startBtnStyle}`}
+            >
+              Start free account
+            </Button>
+          </Link>
         </div>
 
         <div className="lg:hidden">

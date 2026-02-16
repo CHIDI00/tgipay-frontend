@@ -7,6 +7,7 @@ import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 const WeEmpowerBusinessInOurProduct = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -73,7 +74,7 @@ const WeEmpowerBusinessInOurProduct = () => {
 
       {/* content */}
       <div className="relative z-10 max-w-[90rem] px-4 mx-auto">
-        <div className="flex flex-col items-center justify-center lg:w-[55%] md:w-[70%] w-full mx-auto">
+        <div className="flex flex-col items-center justify-center xl:w-[55%] lg:w-[70%] md:w-[70%] w-full mx-auto">
           <FadeInAnimation
             stagger={0.2}
             className="flex flex-col items-center justify-center gap-10"
@@ -88,11 +89,11 @@ const WeEmpowerBusinessInOurProduct = () => {
               track financial activities, and grow with unmatched efficiency.
             </p>
 
-            <div>
+            <Link href="/whoWeAre#our-values">
               <Button className="px-10 text-lg font-semibold text-white transition-all duration-300 transform rounded-lg shadow-xl py-7 bg-brand-navy hover:bg-brand-navy/90 hover:shadow-2xl hover:-translate-y-1">
                 Learn more
               </Button>
-            </div>
+            </Link>
           </FadeInAnimation>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const PricingSection = () => {
   return (
@@ -67,14 +68,14 @@ const PricingSection = () => {
           </Card>
         </div>
 
-        <div className="flex justify-center w-full">
+        <Link href="merchant.tgipay.com" className="flex justify-center w-full">
           <Button
-            className="bg-brand-navy hover:bg-brand-navy/90 text-white text-base lg:text-lg font-semibold px-12 py-7 rounded-xl transition-all "
+            className="px-12 text-base font-semibold text-white transition-all bg-brand-navy hover:bg-brand-navy/90 lg:text-lg py-7 rounded-xl "
             size="lg"
           >
             Get Started
           </Button>
-        </div>
+        </Link>
       </div>
     </section>
   );

@@ -65,7 +65,7 @@ const About_whoWeAre = () => {
 
           <div
             ref={containerRef}
-            className="relative w-full h-[400px] md:h-[500px] mt-10 lg:mt-0"
+            className="relative w-full h-[400px] md:h-[500px] xl:h-[500px] lg:h-[550px] mt-10 lg:mt-0"
           >
             <div className="absolute top-0 left-0 z-10 transition-all duration-300 transform md:left-4 -rotate-3 hover:z-50 hover:scale-105">
               <div className="bg-white rounded-lg bounce-card">
@@ -74,7 +74,7 @@ const About_whoWeAre = () => {
                   alt="Man with shopping bags"
                   width={260}
                   height={180}
-                  className="w-[160px] md:w-[260px] h-auto rounded-md object-cover"
+                  className="w-[160px] md:w-[260px] xl:w-[240px] lg:w-[200px] h-auto rounded-md object-cover"
                 />
               </div>
             </div>
@@ -86,7 +86,7 @@ const About_whoWeAre = () => {
                   alt="Market woman"
                   width={240}
                   height={200}
-                  className="w-[170px] md:w-[240px] h-auto rounded-md object-cover"
+                  className="w-[170px] md:w-[240px] xl:w-[240px] lg:w-[200px] h-auto rounded-md object-cover"
                 />
               </div>
             </div>
@@ -98,7 +98,7 @@ const About_whoWeAre = () => {
                   alt="Shop owner"
                   width={350}
                   height={220}
-                  className="w-[190px] md:w-[350px] h-auto rounded-md object-cover"
+                  className="w-[190px] md:w-[350px] xl:w-[350px] lg:w-[250px] h-auto rounded-md object-cover"
                 />
               </div>
             </div>
@@ -110,7 +110,7 @@ const About_whoWeAre = () => {
                   alt="Shopper on phone"
                   width={250}
                   height={160}
-                  className="w-[150px] md:w-[250px] h-auto rounded-md object-cover"
+                  className="w-[150px] md:w-[250px] xl:w-[240px] lg:w-[200px] h-auto rounded-md object-cover"
                 />
               </div>
             </div>

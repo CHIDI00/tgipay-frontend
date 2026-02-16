@@ -11,11 +11,11 @@ const BankAccountSolution = () => {
   return (
     <div id="bank-account" className="w-full py-20 lg:py-24 bg-[#F9F9F9]">
       <div className="max-w-[90rem] px-4 mx-auto ">
-        <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
-          {/* card image */}
+        <div className="flex flex-col items-center gap-8 lg:gap-16 lg:flex-row">
+          {/* card image container */}
           <FadeInAnimation
             duration={1}
-            className="flex justify-center lg:justify-start"
+            className="flex justify-center w-full lg:w-1/2 lg:justify-start"
           >
             <Image
               src={bankaccountsolutionRaw}
@@ -27,10 +27,10 @@ const BankAccountSolution = () => {
             />
           </FadeInAnimation>
 
-          {/* content */}
+          {/* content container  */}
           <FadeInAnimation
             stagger={0.2}
-            className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start"
+            className="flex flex-col items-start justify-center w-full space-y-8 lg:w-1/2 md:items-center lg:items-start"
           >
             <div className="inline-flex items-center gap-[10px] px-4 py-2 border border-[#44c3e3] rounded-[20px]">
               <Image

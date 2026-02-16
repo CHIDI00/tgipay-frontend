@@ -13,11 +13,12 @@ const PaymentLinkSolution = () => {
   return (
     <div id="payment-link" className="w-full py-20 lg:py-24">
       <div className="max-w-[90rem] px-4 mx-auto">
-        <div className="grid items-center grid-cols-1 gap-12 lg:gap-24 lg:grid-cols-2">
-          {/* content */}
+        {/* CHANGED: grid -> flex flex-col lg:flex-row */}
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-32">
+          {/* content - Takes 50% width on desktop */}
           <FadeInAnimation
             stagger={0.3}
-            className="lg:w-[90%] flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start"
+            className="flex flex-col items-start justify-center w-full space-y-8 lg:w-1/2 md:items-center lg:items-start"
           >
             <div className="inline-flex items-center gap-[10px] px-4 py-2 border border-[#44c3e3] rounded-[20px]">
               <Image
@@ -53,10 +54,10 @@ const PaymentLinkSolution = () => {
             </p>
           </FadeInAnimation>
 
-          {/* card image */}
+          {/* card image - Takes 50% width on desktop */}
           <FadeInAnimation
             duration={1}
-            className="relative flex justify-center lg:justify-end"
+            className="relative flex justify-center w-full lg:w-1/2 lg:justify-end"
           >
             <Image
               src={paymentlinksolutionRaw}
@@ -73,7 +74,7 @@ const PaymentLinkSolution = () => {
               width={300}
               height={100}
               loading="lazy"
-              className="absolute md:-left-32 -left-0 md:w-full w-[50%] max-w-[300px] h-auto"
+              className="absolute xl:-left-24 lg:-left-24 md:-left-32 -left-0 md:w-full w-[50%] max-w-[300px] h-auto"
             />
           </FadeInAnimation>
         </div>

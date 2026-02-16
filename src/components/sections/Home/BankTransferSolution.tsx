@@ -12,11 +12,11 @@ const BankTransferSolution = () => {
   return (
     <div id="bank-transfer" className="w-full py-20 lg:py-24">
       <div className="max-w-[90rem] px-4 mx-auto">
-        <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
-          {/* content */}
+        <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-16 lg:gap-0">
+          {/* content container */}
           <FadeInAnimation
             stagger={0.2}
-            className="flex flex-col items-start justify-center space-y-8 md:items-center lg:items-start"
+            className="flex flex-col items-start justify-center w-full space-y-8 lg:w-1/2 md:items-center lg:items-start"
           >
             <div className="inline-flex items-center gap-[10px] px-4 py-2 border border-[#44c3e3] rounded-[20px]">
               <Image
@@ -49,8 +49,8 @@ const BankTransferSolution = () => {
             </p>
           </FadeInAnimation>
 
-          {/* card image */}
-          <FloatingAnimation className="flex justify-center lg:justify-end">
+          {/* card image container */}
+          <FloatingAnimation className="flex justify-center w-full lg:w-1/2 lg:justify-end">
             <Image
               src={transferimageRaw}
               alt="Debit cards illustration"

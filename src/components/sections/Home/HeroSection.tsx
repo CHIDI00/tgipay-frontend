@@ -14,10 +14,10 @@ const HeroSection = () => {
   return (
     <section className="w-full lg:max-h-[60rem] h-[100dvh] bg-[#F9FAFB] ">
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden ">
-        <div className="grid items-center w-full h-full grid-cols-1 lg:grid-cols-2">
-          {/* left content */}
-          <div className="py-[4.4rem] md:space-y-14 space-y-3 ">
-            <h1 className="font-bold text-[30px] md:text-[50px] lg:text-[65px] leading-tight lg:leading-[70px]">
+        <div className="flex flex-col items-center w-full h-full lg:flex-row">
+          {/* left content*/}
+          <div className="w-full lg:w-1/2 py-[4.4rem] lg:space-y-5 md:space-y-14 space-y-3 ">
+            <h1 className="font-bold text-[30px] md:text-[50px] lg:text-[50px] xl:text-[60px] leading-tight lg:leading-[50px] xl:leading-[70px]">
               <span className="block text-hero-navy">
                 {" "}
                 <SplitText
@@ -58,10 +58,10 @@ const HeroSection = () => {
                 </span>
               </span>
 
-              <span className="block text-hero-cyan">
+              <span className="text-hero-cyan">
                 <SplitText
-                  text="payment solutions"
-                  className="inline-block"
+                  text="payment  solutions"
+                  className="flex"
                   delay={50}
                   duration={0.7}
                   splitType="chars"
@@ -72,7 +72,7 @@ const HeroSection = () => {
             </h1>
 
             <FadeInAnimation delay={0.5}>
-              <p className="font-medium text-[14px] md:text-[20px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
+              <p className="font-medium text-[14px] xl:text-[20px] lg:text-[17px] md:text-[20px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
                 Experience payments without boundaries. We offer fast, secure,
                 and frictionless transactions for businesses and individuals.
                 You can focus on growing while we handle the payments.
@@ -100,8 +100,8 @@ const HeroSection = () => {
             </FadeInAnimation>
           </div>
 
-          {/* right content */}
-          <div className="relative flex items-end justify-center h-full lg:justify-end -bottom-2">
+          {/* right content  */}
+          <div className="relative flex items-end justify-center w-full h-full lg:w-1/2 lg:justify-end -bottom-2">
             <FadeInAnimation
               delay={0.6}
               stagger={0.2}
