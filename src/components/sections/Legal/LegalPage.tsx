@@ -1,4 +1,4 @@
-// import Silk from "@/components/Silk";
+import Silk from "@/components/Silk";
 import Link from "next/link";
 
 export type LegalSection = {
@@ -33,13 +33,13 @@ const LegalPage = ({
       <section className="relative overflow-hidden bg-brand-navy pb-28 pt-36">
         <div className="absolute inset-0 opacity-20 [background-size:64px_64px] [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)]" />
 
-        {/* <Silk
+        <Silk
           speed={5}
           scale={1}
           color="#7B7481"
           noiseIntensity={1.5}
           rotation={0}
-        /> */}
+        />
 
         <div className="relative z-10 max-w-[90rem] px-4 mx-auto">
           <h1 className="text-4xl font-bold text-white md:text-6xl">Legal</h1>
