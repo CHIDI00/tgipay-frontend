@@ -40,7 +40,7 @@ const OurWords = () => {
     <div className="w-full py-20 bg-white lg:py-24">
       <div className="max-w-[90rem] px-4 mx-auto">
         {/* Switched to FLEX layout for consistency */}
-        <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-10">
+        <div className="flex flex-col items-center gap-8 lg:flex-col lg:gap-10">
           {/* Content Section - 50% width */}
           <FadeInAnimation
             stagger={0.7}
@@ -61,9 +61,9 @@ const OurWords = () => {
           {/* Video Section */}
           <FadeInAnimation
             duration={1.5}
-            className="flex justify-center w-full lg:w-1/2 lg:justify-end"
+            className="flex justify-center w-full lg:w-full lg:justify-end"
           >
-            <div className="relative w-full max-w-[1000px] overflow-hidden rounded-2xl">
+            <div className="relative w-full max-w-[1000px] overflow-hidden rounded-2xl p-4 border border-gray-200">
               <video
                 ref={videoRef}
                 width="800"
