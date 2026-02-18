@@ -63,7 +63,7 @@ const OurWords = () => {
             duration={1.5}
             className="flex justify-center w-full lg:w-full lg:justify-end"
           >
-            <div className="relative w-full max-w-[1000px] overflow-hidden rounded-2xl p-4 border border-gray-200">
+            <div className="relative w-full p-4 overflow-hidden border border-gray-200 rounded-2xl">
               <video
                 ref={videoRef}
                 width="800"
