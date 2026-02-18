@@ -54,7 +54,7 @@ const LegalPage = ({
             </p>
 
             <nav className="pl-4 mb-10 border-l border-slate-300 ">
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {tabs.map((tab) => {
                   const isActive = tab.href === activeTab;
 
@@ -81,7 +81,7 @@ const LegalPage = ({
             </p>
 
             <nav className="pl-4 border-l border-slate-300">
-              <ul className="space-y-3">
+              <ul className="space-y-5">
                 {sections.map((section, index) => (
                   <li key={section.id}>
                     <a
