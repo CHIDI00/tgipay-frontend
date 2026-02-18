@@ -53,7 +53,10 @@ const WaysToReceivePayments = () => {
   );
 
   return (
-    <section className="px-4 md:py-24 py-16 bg-[#EAFBF1] sm:px-6 lg:px-8">
+    <section
+      id="receive-payment"
+      className="px-4 md:py-24 py-16 bg-[#EAFBF1] sm:px-6 lg:px-8"
+    >
       <div className="max-w-[90rem] mx-auto">
         <div className="flex flex-col w-full gap-14">
           <FadeInAnimation className="md:ext-[3rem] text-[2rem] font-bold md:leading-[50px] leading-[40px] text-brand-navy">

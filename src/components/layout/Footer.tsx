@@ -70,7 +70,7 @@ const Footer = () => {
   ];
 
   const productsLinks = [
-    { label: "Collect Payments", href: "/ourProduct#collect-payments" },
+    { label: "Collect Payments", href: "/#receive-payment" },
     { label: "Bank Transfer", href: "/ourProduct#bank-transfer" },
     { label: "Bank Account", href: "/ourProduct#bank-account" },
     { label: "Invoices", href: "/ourProduct#invoicing" },

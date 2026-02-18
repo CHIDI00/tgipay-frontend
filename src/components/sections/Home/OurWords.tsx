@@ -44,7 +44,7 @@ const OurWords = () => {
           {/* Content Section - 50% width */}
           <FadeInAnimation
             stagger={0.7}
-            className="flex flex-col items-start justify-center w-full space-y-8 lg:w-1/2 md:items-center lg:items-start lg:mr-28"
+            className="flex flex-col items-start justify-center w-full space-y-8 md:flex-row lg:w-full md:items-center lg:items-start"
           >
             <h2 className="font-bold text-[23px] text-left md:text-[45px] lg:text-[45px] xl:text-[55px] leading-tight text-brand-navy">
               Don’t just take our words for it
