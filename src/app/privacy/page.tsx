@@ -1,0 +1,24 @@
+import type { Metadata } from "next";
+
+import LegalPage from "@/components/sections/Legal/LegalPage";
+import { legalTabs, privacyIntro, privacySections } from "@/lib/legalContent";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | TGIPay",
+  description:
+    "Read TGIPAY’s Privacy Policy on data collection, use, sharing, and protection.",
+};
+
+const page = () => {
+  return (
+    <LegalPage
+      heading="Privacy Policy"
+      intro={privacyIntro}
+      sections={privacySections}
+      activeTab="/privacy"
+      tabs={legalTabs}
+    />
+  );
+};
+
+export default page;

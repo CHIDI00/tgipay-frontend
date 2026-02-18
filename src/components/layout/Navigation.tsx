@@ -14,7 +14,13 @@ import MobileMenu from "./MobileMenu";
 const Navigation = () => {
   const pathname = usePathname();
 
-  const darkBackgroundPages = ["/ourPricing", "/ourProduct", "/whoWeAre"];
+  const darkBackgroundPages = [
+    "/ourPricing",
+    "/ourProduct",
+    "/whoWeAre",
+    "/privacy",
+    "/policy",
+  ];
 
   const isDarkTheme = darkBackgroundPages.includes(pathname);
 
