@@ -9,6 +9,7 @@ import CircularChart from "../../../../public/CircularChart.svg";
 import SplitText from "@/components/ui/SplitText";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import FloatingAnimation from "@/components/ui/FloatingAnimation";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -16,7 +17,7 @@ const HeroSection = () => {
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden ">
         <div className="flex flex-col items-center w-full h-full lg:flex-row">
           {/* left content*/}
-          <div className="w-full lg:w-1/2 py-[4.4rem] lg:space-y-5 md:space-y-14 space-y-3 ">
+          <div className="w-full lg:w-1/2 md:py-[4.4rem] py-[7rem] lg:space-y-5 md:space-y-14 space-y-3 ">
             <h1 className="font-bold text-[30px] md:text-[50px] lg:text-[50px] xl:text-[60px] leading-tight lg:leading-[50px] xl:leading-[70px]">
               <span className="block text-hero-navy">
                 {" "}
@@ -60,7 +61,7 @@ const HeroSection = () => {
 
               <span className="text-hero-cyan">
                 <SplitText
-                  text="payment  solutions"
+                  text={`payment${" "}solutions`}
                   className="flex"
                   delay={50}
                   duration={0.7}
@@ -84,19 +85,24 @@ const HeroSection = () => {
               stagger={0.2}
               className="flex gap-4 pt-6"
             >
-              <Button
-                size="lg"
-                className="bg-hero-cyan hover:bg-hero-cyan/90 text-white font-semibold md:text-[15px] text-[13px] px-6 py-4 h-auto rounded-lg"
-              >
-                Create Free Account
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-hero-navy text-hero-navy hover:bg-gray-50 font-semibold md:text-[15px] text-[13px] px-6 py-4 h-auto rounded-lg"
-              >
-                Learn more
-              </Button>
+              <Link href="https://merchant.tgipay.com">
+                <Button
+                  size="lg"
+                  className="bg-hero-cyan hover:bg-hero-cyan/90 text-white font-semibold md:text-[15px] text-[13px] px-6 py-4 h-auto rounded-lg"
+                >
+                  Create Free Account
+                </Button>
+              </Link>
+
+              <Link href="/whoWeAre">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-hero-navy text-hero-navy hover:bg-gray-50 font-semibold md:text-[15px] text-[13px] px-6 py-4 h-auto rounded-lg"
+                >
+                  Learn more
+                </Button>
+              </Link>
             </FadeInAnimation>
           </div>
 

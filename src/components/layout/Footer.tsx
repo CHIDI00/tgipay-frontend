@@ -81,15 +81,15 @@ const Footer = () => {
   const securityLinks = [
     { label: "Privacy Policy", href: "/" },
     { label: "Terms of Use", href: "/" },
-    { label: "PCI DSS", href: "merchant.tgipay.com" },
+    { label: "PCI DSS", href: "/" },
   ];
 
   const supportLinks = [
-    { label: "Getting Started", href: "merchant.tgipay.com" },
-    { label: "Setting up Account", href: "#" },
-    { label: "Dashboard", href: "merchant.tgipay.com" },
-    { label: "Settlements", href: "#" },
-    { label: "Disputes", href: "#" },
+    { label: "Getting Started", href: "https://merchant.tgipay.com" },
+    { label: "Setting up Account", href: "/" },
+    { label: "Dashboard", href: "https://merchant.tgipay.com" },
+    { label: "Settlements", href: "/" },
+    { label: "Disputes", href: "/" },
   ];
 
   const socialLinks = [
