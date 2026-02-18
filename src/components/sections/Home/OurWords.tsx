@@ -37,7 +37,7 @@ const OurWords = () => {
   }, []);
 
   return (
-    <div className="w-full py-20 bg-white lg:py-24">
+    <div id="know-how-to" className="w-full py-20 bg-white lg:py-24">
       <div className="max-w-[90rem] px-4 mx-auto">
         {/* Switched to FLEX layout for consistency */}
         <div className="flex flex-col items-center gap-8 lg:flex-col lg:gap-10">

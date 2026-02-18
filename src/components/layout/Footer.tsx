@@ -85,11 +85,11 @@ const Footer = () => {
   ];
 
   const supportLinks = [
-    { label: "Getting Started", href: "https://merchant.tgipay.com" },
-    { label: "Setting up Account", href: "/" },
-    { label: "Dashboard", href: "https://merchant.tgipay.com" },
-    { label: "Settlements", href: "/" },
-    { label: "Disputes", href: "/" },
+    { label: "Getting Started", href: "/contactUs" },
+    { label: "Setting up Account", href: "/#know-how-to" },
+    { label: "Dashboard", href: "/contactUs" },
+    { label: "Settlements", href: "/contactUs" },
+    { label: "Disputes", href: "/contactUs" },
   ];
 
   const socialLinks = [
@@ -165,7 +165,10 @@ const Footer = () => {
                 Get The TGIPAY Mobile App
               </p>
               <div className="flex gap-2">
-                <Link href="#" className="transition-opacity hover:opacity-80">
+                <Link
+                  href="https://play.google.com/store/apps/details?id=com.tgipay&hl=en"
+                  className="transition-opacity hover:opacity-80"
+                >
                   <Image
                     src={playstore}
                     alt="Google Play"
@@ -174,7 +177,10 @@ const Footer = () => {
                     className="w-auto"
                   />
                 </Link>
-                <Link href="#" className="transition-opacity hover:opacity-80">
+                <Link
+                  href="https://apps.apple.com/ng/app/tgipay/id6504392852"
+                  className="transition-opacity hover:opacity-80"
+                >
                   <Image
                     src={applestore}
                     alt="App Store"
