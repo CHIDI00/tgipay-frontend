@@ -30,7 +30,7 @@ const LegalPage = ({
 }: LegalPageProps) => {
   return (
     <main>
-      <section className="relative w-full pb-24 overflow-hidden md:pb-28 md:pt-36 pt-28">
+      <section className="relative w-full pb-24 overflow-hidden bg-brand-navy md:pb-28 md:pt-36 pt-28">
         <div className="absolute inset-0">
           <Silk
             speed={0.1}
@@ -109,7 +109,7 @@ const LegalPage = ({
               {intro?.map((paragraph) => (
                 <p
                   key={paragraph}
-                  className="leading-relaxed text-md text-slate-700"
+                  className="leading-relaxed text-[14px] xl:text-[16px] lg:text-[17px] md:text-[20px] text-slate-700"
                 >
                   {paragraph}
                 </p>
@@ -129,14 +129,14 @@ const LegalPage = ({
                 {section.paragraphs?.map((paragraph) => (
                   <p
                     key={`${section.id}-${paragraph.slice(0, 40)}`}
-                    className="leading-relaxed text-md text-slate-700"
+                    className="leading-relaxed text-[14px] xl:text-[16px] lg:text-[17px] md:text-[20px] text-slate-700"
                   >
                     {paragraph}
                   </p>
                 ))}
 
                 {section.bullets?.length ? (
-                  <ul className="space-y-2 leading-relaxed list-disc list-outside text-md text-slate-700 pl-7">
+                  <ul className="space-y-2 leading-relaxed list-disc list-outside text-[14px] xl:text-[16px] lg:text-[17px] md:text-[20px] text-slate-700 pl-7">
                     {section.bullets.map((bullet) => (
                       <li key={`${section.id}-${bullet.slice(0, 40)}`}>
                         {bullet}

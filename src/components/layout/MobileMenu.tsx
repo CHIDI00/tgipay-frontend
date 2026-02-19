@@ -123,13 +123,13 @@ const MobileMenu = ({ items, isDarkTheme }: MobileMenuProps) => {
               {/* bottom buttons */}
               <div className="flex flex-col gap-4 pt-8 mt-auto border-t border-slate-100">
                 <Link
-                  href="/login"
+                  href="https://merchant.tgipay.com"
                   className="w-full py-4 font-bold text-center rounded-lg bg-slate-100 text-brand-navy hover:bg-slate-200"
                 >
                   Login
                 </Link>
                 <Link
-                  href="/signup"
+                  href="https://merchant.tgipay.com"
                   className="w-full py-4 font-bold text-center text-white rounded-lg shadow-lg bg-brand-cyan hover:bg-brand-cyan/90"
                 >
                   Start free account

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <LegalPage
-      heading="Policy"
+      heading="Cookies Policy"
       intro={policyIntro}
       sections={policySections}
       activeTab="/policy"
