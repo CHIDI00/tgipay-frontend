@@ -68,7 +68,10 @@ const PricingSection = () => {
           </Card>
         </div>
 
-        <Link href="merchant.tgipay.com" className="flex justify-center w-full">
+        <Link
+          href="https://merchant.tgipay.com"
+          className="flex justify-center w-full"
+        >
           <Button
             className="px-12 text-base font-semibold text-white transition-all bg-brand-navy hover:bg-brand-navy/90 lg:text-lg py-7 rounded-xl "
             size="lg"

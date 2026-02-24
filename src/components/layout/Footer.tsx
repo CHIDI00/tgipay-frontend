@@ -66,7 +66,7 @@ const Footer = () => {
     { label: "Vision", href: "/whoWeAre#vision" },
     { label: "Mission", href: "/whoWeAre#mission" },
     { label: "Our Values", href: "/whoWeAre#our-values" },
-    { label: "Blog", href: "/" },
+    { label: "Blog", href: "" },
   ];
 
   const productsLinks = [
@@ -86,7 +86,7 @@ const Footer = () => {
 
   const supportLinks = [
     { label: "Getting Started", href: "/contactUs" },
-    { label: "Setting up Account", href: "/#know-how-to" },
+    { label: "Setting up Account", href: "https://merchant.tgipay.com" },
     { label: "Dashboard", href: "/contactUs" },
     { label: "Settlements", href: "/contactUs" },
     { label: "Disputes", href: "/contactUs" },
