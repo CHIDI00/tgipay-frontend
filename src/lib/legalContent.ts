@@ -2,7 +2,7 @@ import { LegalSection } from "@/components/sections/Legal/LegalPage";
 
 export const legalTabs = [
   { label: "Privacy Policy", href: "/privacy" },
-  { label: "Policy", href: "/policy" },
+  { label: "Cookies Policy", href: "/policy" },
 ];
 
 export const privacyIntro = [

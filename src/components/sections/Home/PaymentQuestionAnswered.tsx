@@ -70,7 +70,7 @@ const PaymentQuestionAnswered = () => {
                           : "text-brand-navy rotate-0",
                       )}
                     />
-                    <p className="text-lg font-normal select-none text-brand-navy">
+                    <p className="md:text-lg text-md font-normal select-none text-brand-navy">
                       {faq.question}
                     </p>
                   </div>
@@ -86,7 +86,7 @@ const PaymentQuestionAnswered = () => {
                     <div className="overflow-hidden">
                       <div className="flex gap-7">
                         <div className="min-w-[24px]" />
-                        <p className="leading-relaxed text-slate-600">
+                        <p className="leading-relaxed md:text-md text-sm text-slate-600">
                           {faq.answer}
                         </p>
                       </div>

@@ -5,7 +5,7 @@ import { legalTabs, privacyIntro, privacySections } from "@/lib/legalContent";
 import ReadyToTransform from "@/components/sections/Home/ReadyToTransform";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | TGIPay",
+  title: "Privacy Policy",
   description:
     "Read TGIPAY’s Privacy Policy on data collection, use, sharing, and protection.",
 };

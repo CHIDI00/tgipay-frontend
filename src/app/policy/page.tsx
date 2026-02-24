@@ -4,7 +4,7 @@ import LegalPage from "@/components/sections/Legal/LegalPage";
 import { legalTabs, policyIntro, policySections } from "@/lib/legalContent";
 
 export const metadata: Metadata = {
-  title: "Policy | TGIPay",
+  title: "Policy",
   description:
     "Review TGIPAY policy details on cookies, data security, retention, transfer, and user rights.",
 };

@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
-import { Loader2, CheckCircle, AlertCircle } from "lucide-react"; // Icons for feedback
+import { Loader2, CheckCircle, AlertCircle } from "lucide-react";
 
 const ContactUsSection = () => {
-  // state for form data
+  // state of the form is empty here
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,8 +19,8 @@ const ContactUsSection = () => {
     "idle" | "loading" | "success" | "error"
   >("idle");
 
-  // Handle Input Changes
-  const handleChange = (
+  // handle input on change
+  const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData((prev) => ({
@@ -38,16 +38,33 @@ const ContactUsSection = () => {
         throw new Error("Please fill in all required fields.");
       }
 
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      // form api endpoint
+      const FORM_API_ENDPOINT = "https://formspree.io/f/mzbnnlrv";
 
-      setStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
+      // api endpoint
+      const response = await fetch(`${FORM_API_ENDPOINT}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-      // reset the success message after 5 seconds
-      setTimeout(() => setStatus("idle"), 5000);
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+
+        // reset the success message after 10 seconds
+        setTimeout(() => setStatus("idle"), 10000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 5000);
+      }
     } catch (error) {
       console.error(error);
       setStatus("error");
+      setTimeout(() => setStatus("idle"), 10000);
     }
   };
 
@@ -81,7 +98,7 @@ const ContactUsSection = () => {
                     type="text"
                     id="name"
                     value={formData.name}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                     required
                     placeholder="Enter your name"
                     className="w-full px-4 py-3 transition-all border rounded-lg outline-none border-slate-200 placeholder:text-slate-300 focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan"
@@ -99,7 +116,7 @@ const ContactUsSection = () => {
                     type="email"
                     id="email"
                     value={formData.email}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                     required
                     placeholder="Enter your e-mail address"
                     className="w-full px-4 py-3 transition-all border rounded-lg outline-none border-slate-200 placeholder:text-slate-300 focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan"
@@ -118,7 +135,7 @@ const ContactUsSection = () => {
                   type="text"
                   id="subject"
                   value={formData.subject}
-                  onChange={handleChange}
+                  onChange={handleInputChange}
                   placeholder="Enter the subject"
                   className="w-full px-4 py-3 transition-all border rounded-lg outline-none border-slate-200 placeholder:text-slate-300 focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan"
                 />
@@ -135,7 +152,7 @@ const ContactUsSection = () => {
                   id="message"
                   rows={6}
                   value={formData.message}
-                  onChange={handleChange}
+                  onChange={handleInputChange}
                   required
                   placeholder="Start typing here"
                   className="w-full px-4 py-3 transition-all border rounded-lg outline-none resize-none border-slate-200 placeholder:text-slate-300 focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan"
