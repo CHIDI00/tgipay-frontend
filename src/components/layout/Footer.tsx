@@ -66,7 +66,7 @@ const Footer = () => {
     { label: "Vision", href: "/whoWeAre#vision" },
     { label: "Mission", href: "/whoWeAre#mission" },
     { label: "Our Values", href: "/whoWeAre#our-values" },
-    { label: "Blog", href: "" },
+    // { label: "Blog", href: "" },
   ];
 
   const productsLinks = [
@@ -81,7 +81,7 @@ const Footer = () => {
   const securityLinks = [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Use", href: "/privacy#how-we-use" },
-    { label: "PCI DSS", href: "" },
+    // { label: "PCI DSS", href: "" },
   ];
 
   const supportLinks = [
