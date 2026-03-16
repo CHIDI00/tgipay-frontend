@@ -76,6 +76,7 @@ const Footer = () => {
     { label: "Invoices", href: "/ourProduct#invoicing" },
     { label: "Payment Link", href: "/ourProduct#payment-link" },
     { label: "Offline Payment", href: "/ourProduct#offline-payment" },
+    { label: "Marketplace", href: "/marketplace" },
   ];
 
   const securityLinks = [
