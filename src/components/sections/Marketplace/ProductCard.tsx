@@ -14,6 +14,7 @@ export interface ProductCardProps {
   rating?: number;
   reviews?: number;
   hasFavorite?: boolean;
+  category?: string;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({

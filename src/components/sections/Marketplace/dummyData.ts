@@ -4,6 +4,7 @@ export const topSellingProducts = [
     name: "Classic Minimalist Watch with Leather Strap",
     store: "TimeKeepers Official",
     price: "₦25,000",
+    category: "Fashion",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCDlyrqnA6W9CkbZ8j61dJ9oAi3lLbd5FgxMV-Pet36FTL1NJ0AxxpEuyQYEH3ELW3Oih9BdZi1oahgbHm7t7mMEy3EEt3E5zbshp3Lgpw-t92Aiz76A8W9QldlxQVld-lANDCqRwsbMTezRlDxTV-gewgHp6wvxzU_Ys-9qWs7tQ8AJnRDnEFXl4roZ2YxJ4kPzbG7JEepheM_vBUW5Je-qYeh85Kb9_dQmC1wuZxkqt0S4Gd8guX-2Bc95pPvKXcqBjluWLX-yj-a",
     rating: 4,
@@ -17,6 +18,7 @@ export const topSellingProducts = [
     name: "Wireless Noise Cancelling Headphones",
     store: "Audio Hub",
     price: "₦55,000",
+    category: "Electronics",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBkeorhpHUFAtUNrPsTBgQQW44TBqri-MXslobjWqs4Xa6Sk6PBDn6caB99FRUY2yQf8hK0toM5eiEpwQsoCWXwQy7n9uLlbbp0bo-Mt_OmAEx5lQO4Kiqbbz420r2e2bYnp9nFGWr9nLe5TPeqsmrzx7qiUfTru9aynHDLZ6QkzIEGXN9vWodjyzzeRjkEfxPpgVws8EFUfX9yx1UjhQQS3GCs-BIc_stZDGvJRS4SpsVOxaS8i4kOZNh6FduqdZWV4iZfyRbQ6glG",
     rating: 5,
@@ -30,6 +32,7 @@ export const topSellingProducts = [
     name: "Skincare Essential Set - 3 Pieces",
     store: "Glow Beauty",
     price: "₦18,500",
+    category: "Health & Beauty",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuByi61P6r-a0R0N7bH3dKhw65V2s6PndwA3I-k2xGz8IuQv3w2Z-7XJbH8v9UjD1R6X2o4L_N1e-3c2L6L0xXlZ8V6Xv7X3H_M9P5a8_S1o0Y_V1lq5-7_S6-8g-7T9I9xZ-7_S3h4m9Vq_r5d4P9q7-9y2T-4o7T9L-2w3N5q8n6G3q0M9P-4X0d9_C8D9x6C-3d5R3a0z6O1z2",
     rating: 4.5,
@@ -43,6 +46,7 @@ export const topSellingProducts = [
     name: "Smart Fitness Tracker Band",
     store: "TechGear",
     price: "₦12,000",
+    category: "Electronics",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuA2F-9x4q_k5Q2D5v-2n_j_U6c_T5r1X4d3E_c6M-U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U9U",
     rating: 4,
@@ -56,6 +60,7 @@ export const topSellingProducts = [
     name: "Men's Casual Sneakers",
     store: "Urban Kicks",
     price: "₦35,000",
+    category: "Fashion",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCqLhw5HFc4wg57S9q1wJFQmFg6Ndz5_O4bpXnD8nxvuoeJit0vaGhRVSC-USLeyR6FyRSk-O_pR_MM7x1Z-mgK6RAzRwvsywVeRO8_nR4ANMwcOym4u_rGw-cpW924qwBfkKnx_MoU1ucavj2af8Qa55VDUFYpeedco4OqWGRm78vkJ5mdxVi6BqwBsYzR2EfS2os1egTBQ77_6BiOBOf9ct24h9apcwXdteQd4J9pzZWFKfhmJGd8Sat1yp1rwwL8GZCIad2sHiEC",
     rating: 5,
@@ -72,6 +77,7 @@ export const recommendedProducts = [
     name: "Ergonomic Mesh Office Chair - High Back",
     store: "Home Office Hub",
     price: "₦78,000",
+    category: "Home & Office",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDjeXtb2xxDHySxATLKUadKVEprJmm6ncwvPoO9IpffBXm2OKnUOuAzG8YUvRHuUV6cN8iAKoEJpHMYOyXESffXUEfDBpNbFRk8cUhGHx2nur9TRe9hfPZY5CLJD4RCQFKt_wyU5hnqAk4xzfg_VhftDeyIZvuZU9OanrPvQzv1MvpudT4GXF3heVnPvv_AfAbgrOlgn8rUGZovd4RU9hYPPUdqyQ8Dv6KNAg69zSGlVXJaFieLi8rjYWVk99BS3nIqOJxFqZhDyKFm",
     rating: 4,
@@ -85,6 +91,7 @@ export const recommendedProducts = [
     name: '50" Smart 4K Ultra HD LED TV',
     store: "Vision Direct",
     price: "₦345,000",
+    category: "Electronics",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCFuDC79sWXJYxmTs3oy1aASvOa_92UZa3F3MmCbhVdvTdPtTRq7kGY9p2gXmzeEDW14D53210a5q27TMGzU_jPdQ5YyG32GMn7kJA0cXjvF9Oir3VfZImwMMwHiqxHUArwbRkLy--eAbKAMAlsOYqwgx7O1i-acQLNwFIOSNu3bwCBsi1iGjUSwm-IFf8NYFCqo7CS08Wzg8gmdQB6vRMVJZAuBt6hFNSPKZcKnwkuDYWRgXvjbws-52comO9v40wwHsoPTmMac2w-",
     rating: 5,
@@ -98,6 +105,7 @@ export const recommendedProducts = [
     name: "Hi-Fi Wired Earbuds with Mic",
     store: "Sound Masters",
     price: "₦12,500",
+    category: "Electronics",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD6NPCu2uN-B5x7DEm8ePggNNPamqQ9p7kKED50yiymQX3_eAtDJdtWSKmsBkxVi4l_TFWVZyG-uy0wTtFnlI-Z1FOcaonvOuaKkfQweuh4plLMae8-g-2MyHVNMAbZ6tDiSVzSvs16z9T9_zv0Ew414Bt8k4oVv3f9O_Ecwd_gFUV78QEfMmQ5CHlkbZ8ptsbninWAZlDYHr448iOJ5hSIz50OPhtKJuzrp2EawkssB3nBqJavNye7VGKyre1L_mufRVU8JsjuGReh",
     rating: 4,
@@ -124,6 +132,7 @@ export const recommendedProducts = [
     name: "Portable 2TB HDD - Backup Drive",
     store: "Data Store",
     price: "₦62,000",
+    category: "Electronics",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuClzoUYJpAqpZRad9qdvgyGoJlC7H1hLKoBd-XAiTjuejFEW7f4yeA_Fi0xPpVHO7ubgo-zU4DUqo_j23hbqoIZOLUzGDEtPolSISRDpbrXUm0s0qJvfJOfuOpgQqEZkChpab-OKvC7dSXHKcoehuCSULmbdtQYMzGnTCdyKeulxCNMKOWnJkMpatFsJQDCGhQT9o8NVIhcf8btKnTHDUHnTmHGsKQCu0lWY3Y8N9A0wWES9u6BGM5WzMxvT2cOjg4uvfVZYfTT67go",
     rating: 5,
@@ -140,6 +149,7 @@ export const newlyAddedProducts = [
     name: "Azure Blue Parfum - 100ml",
     store: "Luxury Scents",
     price: "₦45,000",
+    category: "Health & Beauty",
     description:
       "Discover a sophisticated and refreshing scent with Azure Blue Parfum. This 100ml fragrance blends citrus notes with warm woody undertones, making it the perfect signature scent for any occasion.",
   },
@@ -148,6 +158,7 @@ export const newlyAddedProducts = [
     name: "Instant Film Camera - Pastel Pink",
     store: "SnapShop",
     price: "₦32,000",
+    category: "Electronics",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDJLcqKf6btEQCKAcnes2uhOqPGU15jyl667WYgxaUjfkjREPc64jqrLEMGCxGvSwZrN6OqrMjBPQMMctSqa0-9GWW2nZcxZhUJ3ZHif8TCITPFhcn9y41T0O2uU2qH9zbXrnvGoMO_1-4F5UZqAWMVk91LPOn0TOdQwakDhuECGgrtnUBuN3YAmHsY-eRI1_keSyozG8W1BTX9QUmHoybM4Ax80fvbViiKBHub5QLN6pROkgLFdwioxRT5JWgQk-ffyMAMhrKzZWey",
     rating: 0,
@@ -161,6 +172,7 @@ export const newlyAddedProducts = [
     name: "Classic Canvas High-Tops",
     store: "Footwear Co",
     price: "₦14,000",
+    category: "Fashion",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuA-Kt91NOsapNfrZEPashFcU6cQDS47PL0o_RLGQfGJEVOfRbNE-RSfQS10_zE4IzMgoavjgGoUoue6pDrkJYK0IivXZ3g_2zGXlIKqWsDk8xk-lfq4dLqFTlw2kMzWcD0y_p9ETEqpegx-FcyGPzsqFsSyw8ks60S8T7gD8Y_UUILPwWZFcC3R0Gj5KOiU98vzOmp22pTN5IetT-g5EWXQiD7w3hqmxDRgQ11XyMcS-oaj9qleSi9VR79kVA46gUYHUWxtsvowyal4",
     rating: 0,
@@ -174,6 +186,7 @@ export const newlyAddedProducts = [
     name: '11" Professional Tablet - 128GB',
     store: "Tech Store",
     price: "₦210,000",
+    category: "Electronics",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuA38pFnWAd2ODTJ-_yNYL5cziYegPGIvyVobvojmou-MucFuyOVz56oSs6EA2iCAS90ixCzQp8aIe82Sawgi4j-EDK-EiIIbUBHpEk5FxCDlzDaBk049NzXatQYuABIC_CAS98HNHtVRl5rQ2VkvDaATyvaAhxxCNtZ12k7c_A1G3SWnbQZ3ok5p5hDd0imRP1QbVMonn2x_OV78O9At_S-I6VJHyzATIRKxL8fTAHwzyBLFQZ7yXWqBXRa8gxM0jpLu3orIxQE2dA5",
     rating: 0,
@@ -187,6 +200,7 @@ export const newlyAddedProducts = [
     name: "Genuine Leather Bifold Wallet",
     store: "Leather Works",
     price: "₦7,500",
+    category: "Fashion",
     description:
       "Carry your essentials in style with this elegant bifold wallet. Handcrafted from top-grain genuine leather, featuring multiple card slots, a clear ID window, and a spacious bill compartment in a slim profile.",
     image:
