@@ -13,6 +13,7 @@ const CATEGORIES = [
   "All Categories",
   "Electronics",
   "Fashion",
+  "Food",
   "Home & Office",
   "Health & Beauty",
   "Sports & Outdoors",
