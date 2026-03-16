@@ -25,7 +25,7 @@ const SearchResults = () => {
   const [sortOption, setSortOption] = useState("Newest Arrivals");
   const [currentPage, setCurrentPage] = useState(1);
 
-  // simulated search filtering
+  //  search filtering
   const filteredProducts = allProducts.filter((product) => {
     const matchesQuery = query
       ? product.name.toLowerCase().includes(query.toLowerCase()) ||
