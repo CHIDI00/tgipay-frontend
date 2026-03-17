@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Heart, Star } from "lucide-react";
 
+import { useCart } from "@/context/CartContext";
+
 export interface ProductCardProps {
   id: string;
   name: string;
@@ -27,6 +29,27 @@ const ProductCard: React.FC<ProductCardProps> = ({
   reviews = 0,
   hasFavorite = true,
 }) => {
+  // Destructure addToCart function from our global context
+  const { addToCart, setIsCartOpen } = useCart();
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    // 1. Prevent typical link behavior (since the entire card is draped in a Next Link) and event bubbling
+    e.preventDefault();
+    e.stopPropagation();
+
+    // 2. Dispatch product details payload into the global cart context
+    addToCart({
+      id,
+      name,
+      priceStr: price,
+      image,
+      store,
+    });
+
+    // 3. Open the drawer automatically to show they added something and give feedback
+    setIsCartOpen(true);
+  };
+
   return (
     <Link href={`/marketplace/product/${id}`} className="block">
       <div className="flex flex-col h-full overflow-hidden transition-shadow bg-white border dark:bg-slate-900 rounded-xl border-slate-200 dark:border-slate-800 hover:shadow-lg">
@@ -78,10 +101,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
             <button
               className="w-full mt-3 bg-[#0A2540] text-white font-bold py-2 rounded text-xs hover:opacity-90 transition-colors relative z-10"
               style={{ backgroundColor: "#14416e" }}
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-              }}
+              onClick={handleAddToCart}
             >
               Add to Cart
             </button>

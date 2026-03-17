@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useCart } from "@/context/CartContext";
 
 import primaryLogo from "../../../../public/TGIPrimaryLogo.svg";
 import cbnLogo from "../../../../public/cbnLogo.svg";
@@ -22,6 +23,7 @@ const CATEGORIES = [
 
 const MarketplaceHeader = () => {
   const router = useRouter();
+  const { totalItems, setIsCartOpen } = useCart();
 
   // state for search and category filtering
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
@@ -138,7 +140,7 @@ const MarketplaceHeader = () => {
             <div className="relative flex-1 group">
               <button
                 type="submit"
-                className="absolute transition-colors -translate-y-1/2 left-3 top-1/2 text-slate-400 group-focus-within:text-primary hover:text-brand-navy"
+                className="absolute transition-colors -translate-y-1/2 left-3 top-1/2 text-slate-400 group-focus-within:text-brand-navy hover:text-brand-navy"
               >
                 <Search size={18} />
               </button>
@@ -160,13 +162,20 @@ const MarketplaceHeader = () => {
           >
             Become a Seller
           </Link>
-          <button className="relative p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+          {/* Cart Icon Button */}
+          <button
+            className="relative p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
+            onClick={() => setIsCartOpen(true)} // Open the cart slider when clicked
+          >
             <span className="material-symbols-outlined">
               <ShoppingCart />
             </span>
-            <span className="absolute top-1 right-1 bg-brand-cyan text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-              3
-            </span>
+            {/* Red Badge Indicator - Only renders if there is at least 1 item total inside the cart */}
+            {totalItems > 0 && (
+              <span className="absolute top-1 right-1 bg-brand-cyan text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full z-10 -translate-y-1 translate-x-1">
+                {totalItems}
+              </span>
+            )}
           </button>
           {/* <button className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
             <span className="material-symbols-outlined">person</span>

@@ -2,9 +2,27 @@
 
 import { useState } from "react";
 import { Star, ShoppingBag, Truck, Store } from "lucide-react";
+import { useCart } from "@/context/CartContext";
 
 export default function ProductInfo() {
   const [quantity, setQuantity] = useState(1);
+  const { addToCart, setIsCartOpen } = useCart();
+
+  const handleAddToCart = () => {
+    // Note: We are hardcoding the product properties for now as this is a dummy detail page.
+    // In the future when the page is dynamic, these should map to data fetched per page route.
+    addToCart({
+      id: "detail_headphone_01",
+      name: "Wireless Noise Cancelling Headphones - Audio Hub",
+      priceStr: "₦55,000",
+      image: "https://placehold.co/400x400/eeeeee/999999?text=Headphones",
+      store: "Audio Hub",
+    });
+
+    // Optionally: If we wanted to add the exact 'quantity' the user selected on this page,
+    // we would modify our context to accept a pre-defined quantity parameter. Right now defaults to 1.
+    setIsCartOpen(true);
+  };
 
   const handleQuantityChange = (type: "increment" | "decrement") => {
     if (type === "increment") {
@@ -68,7 +86,10 @@ export default function ProductInfo() {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-3 pt-4 sm:grid-cols-2">
-          <button className="flex items-center justify-center gap-2 py-2 font-bold text-white transition-all rounded-lg shadow-sm bg-brand-navy hover:bg-brand-navy/90">
+          <button
+            onClick={handleAddToCart}
+            className="flex items-center justify-center gap-2 py-4 font-bold text-white transition-all rounded-xl shadow-sm bg-brand-navy hover:bg-brand-navy/90"
+          >
             <ShoppingBag size={20} />
             Add to Cart
           </button>
