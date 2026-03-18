@@ -81,7 +81,7 @@ const ReadyToTransform = () => {
               business grow. Start transforming your business today!
             </p>
 
-            <Link href="https://merchant.tgipay.com">
+            <Link href="https://merchant.tgipay.com/signup">
               <Button
                 size="lg"
                 className="rounded-lg py-7 bg-brand-cyan hover:bg-slate-700"

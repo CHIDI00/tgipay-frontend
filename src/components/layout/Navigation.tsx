@@ -103,7 +103,7 @@ const Navigation = () => {
             </Button>
           </Link>
 
-          <Link href="https://merchant.tgipay.com">
+          <Link href="https://merchant.tgipay.com/signup">
             <Button
               size="lg"
               variant="outline"

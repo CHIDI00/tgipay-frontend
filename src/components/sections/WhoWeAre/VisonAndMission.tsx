@@ -54,7 +54,7 @@ const VisonAndMission = () => {
               technologies to foster profitability and sustainable growth.
             </p>
 
-            <div className="relative w-full max-w-md mt-8 overflow-hidden border rounded-lg shadow-2xl border-white/10">
+            {/* <div className="relative w-full max-w-md mt-8 overflow-hidden border rounded-lg shadow-2xl border-white/10">
               <Image
                 src={qrCodeImage}
                 alt="Scan to pay"
@@ -63,7 +63,7 @@ const VisonAndMission = () => {
                 loading="lazy"
                 className="object-cover w-full h-auto"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"; // 1. Import ScrollTrigger
 
 import personingreenbackground from "../../../../public/personingreenbackground.svg";
 import womanselling from "../../../../public/womanselling.svg";
-import maninstore from "../../../../public/maninstore.svg";
+import maninstore from "../../../../public/mainstore.png";
 import girlshops from "../../../../public/girlshops.svg";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 
