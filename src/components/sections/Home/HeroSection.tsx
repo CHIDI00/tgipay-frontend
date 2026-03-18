@@ -4,7 +4,9 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-import herosectionperson from "../../../../public/herosectionperson.png";
+// import herosectionperson from "../../../../public/herosectionperson.png";
+import herosectionperson from "../../../../public/newheroimage.png";
+
 import CircularChart from "../../../../public/CircularChart.svg";
 import SplitText from "@/components/ui/SplitText";
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
@@ -18,7 +20,7 @@ const HeroSection = () => {
         <div className="flex flex-col items-center justify-center w-full h-full lg:flex-row md:gap-y-3 gap-y-10">
           {/* left content*/}
           <div className=" w-full lg:w-1/2 lg:pt-[0rem] md:pt-[6rem] pt-[7rem] lg:space-y-5 md:space-y-2 space-y-3 ">
-            <h1 className="font-bold text-[30px] md:text-[50px] lg:text-[50px] xl:text-[60px] leading-tight lg:leading-[50px] xl:leading-[70px]">
+            <h1 className="font-bold text-[30px] md:text-[50px] lg:text-[40px] xl:text-[55px] leading-tight lg:leading-[30px] xl:leading-[60px]">
               <span className="block text-hero-navy">
                 {" "}
                 <SplitText
@@ -48,7 +50,7 @@ const HeroSection = () => {
                 </span>
                 <span className="text-hero-cyan">
                   <SplitText
-                    text="seamless"
+                    text="seamless payment"
                     className="inline-block"
                     delay={40}
                     duration={0.7}
@@ -61,7 +63,7 @@ const HeroSection = () => {
 
               <span className="text-hero-cyan">
                 <SplitText
-                  text={`payment${"  "}solutions`}
+                  text={`solutions`}
                   className="flex"
                   delay={50}
                   duration={0.7}
@@ -107,19 +109,19 @@ const HeroSection = () => {
           </div>
 
           {/* right content  */}
-          <div className="relative flex items-end justify-center w-full h-full lg:w-1/2 lg:justify-end -bottom-2">
+          <div className="relative flex items-end justify-end w-full h-full lg:w-1/2 -bottom-2">
             <FadeInAnimation
               delay={0.6}
               stagger={0.2}
               className="h-full lg:h-auto"
             >
-              <div className="relative w-full h-full ">
+              <div className="relative w-full h-full">
                 <Image
                   src={herosectionperson}
                   alt="Payment solutions professional"
-                  width={1000}
-                  height={1000}
-                  className="object-cover w-full h-full lg:h-auto "
+                  width={1300}
+                  height={1400}
+                  className="object-cover w-full h-full md:h-[42rem]"
                   priority
                 />
               </div>
