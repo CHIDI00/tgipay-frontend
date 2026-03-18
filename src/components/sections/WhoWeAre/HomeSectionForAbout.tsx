@@ -18,13 +18,11 @@ const HomeSectionForAbout = () => {
             duration={1.2}
             className="w-full lg:w-1/2 lg:py-[4.4rem] pt-[6rem] xl:space-y-14 md:space-y-5 space-y-3"
           >
-            <h1 className="font-bold text-white text-[30px]  md:text-[50px] lg:text-[40px] xl:text-[50px] leading-tight lg:leading-[50px] xl:leading-[70px]">
+            <h1 className="font-bold text-white text-[30px]  md:text-[50px] lg:text-[40px] xl:text-[50px] leading-tight lg:leading-[45px] xl:leading-[60px]">
               <span>The payment gateway</span>
               <br />
-              <span>built for simplicity, </span>
-              <span>trust, reliability, and</span>
-              <br />
-              <span>Speed</span>
+              <span>built for simplicity </span>
+              <span>and Speed</span>
             </h1>
 
             <p className="font-medium text-[14px] xl:text-[20px] lg:text-[17px] md:text-[20px] leading-[24px] md:leading-[30px] text-white max-w-[628px]">
@@ -34,7 +32,7 @@ const HomeSectionForAbout = () => {
             </p>
 
             <Link
-              href="https://merchant.tgipay.com"
+              href="https://merchant.tgipay.com/signup"
               className="flex flex-wrap gap-4 pt-6"
             >
               <Button
