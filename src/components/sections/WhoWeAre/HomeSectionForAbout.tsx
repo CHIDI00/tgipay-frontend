@@ -3,7 +3,9 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
-import herosectionperson from "../../../../public/personinwhoweareRaw.webp";
+// import herosectionperson from "../../../../public/personinwhoweareRaw.webp";
+import herosectionperson from "../../../../public/aboutimage.png";
+
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import Link from "next/link";
 
@@ -48,16 +50,18 @@ const HomeSectionForAbout = () => {
           <div className="relative flex items-end justify-center w-full h-full lg:w-1/2">
             <FadeInAnimation
               duration={1}
-              className="relative w-full lg:h-[80%] h-full overflow-hidden"
+              className="relative w-full lg:h-[90%] h-full overflow-hidden flex justify-center items-center"
             >
               <Image
                 src={herosectionperson}
                 alt="Payment solutions professional"
-                width={1000}
+                width={600}
                 height={1000}
                 loading="lazy"
-                className="object-cover w-full h-full"
+                className="z-50 w-auto h-full"
               />
+
+              <div className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2 w-[70%] h-[70%] bg-brand-cyan"></div>
             </FadeInAnimation>
           </div>
         </div>

@@ -4,6 +4,17 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {
+  Users,
+  ShieldCheck,
+  Target,
+  Lightbulb,
+  Award,
+  Zap,
+  Handshake,
+  Route,
+  Flag,
+} from "lucide-react";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -14,44 +25,62 @@ const values = [
     title: "Customers",
     description:
       "Empowering our customers with seamless and secure payment experiences",
+    icon: Users,
+    className: "md:col-span-2 md:row-span-1",
   },
   {
     title: "Integrity",
     description:
       "Building trust through transparency, honesty, and ethical practices",
+    icon: ShieldCheck,
+    className: "md:col-span-1 md:row-span-1",
   },
   {
     title: "Focus",
     description: "Laser-focused on what matters most — our clients' success",
+    icon: Target,
+    className: "md:col-span-1 md:row-span-1",
   },
   {
     title: "Innovation",
     description:
       "Driving progress with cutting-edge solutions that shape the future of payments",
+    icon: Lightbulb,
+    className: "md:col-span-1 md:row-span-2",
   },
   {
     title: "Deliver excellence",
     description: "Exceeding expectations with consistent, high-quality service",
+    icon: Award,
+    className: "md:col-span-1 md:row-span-1",
   },
   {
     title: "Work Smart",
     description:
       "Maximizing efficiency with intelligent strategies and innovative thinking",
+    icon: Zap,
+    className: "md:col-span-1 md:row-span-1",
   },
   {
     title: "Collaboration",
     description:
       "Together, we achieve more by fostering partnerships and teamwork",
+    icon: Handshake,
+    className: "md:col-span-1 md:row-span-1",
   },
   {
     title: "Journey",
     description:
       "Committed to growth and continuous improvement in every step we take",
+    icon: Route,
+    className: "md:col-span-1 md:row-span-1",
   },
   {
     title: "Lead",
     description:
       "Leading by example to inspire progress and set new standards in payments",
+    icon: Flag,
+    className: "md:col-span-2 md:row-span-1",
   },
 ];
 
@@ -79,7 +108,7 @@ const OurValue = () => {
   return (
     <div
       id="our-values"
-      ref={containerRef}
+      // ref={containerRef}
       className="w-full py-20 bg-white lg:py-24"
     >
       <div className="max-w-[90rem] px-4 mx-auto">
@@ -89,22 +118,28 @@ const OurValue = () => {
           </h2>
 
           {/* xalues */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:auto-rows-[16rem]">
             {values.map((item, index) => (
               <div
                 key={index}
-                className="value-card flex flex-col items-start p-10 md:h-[20rem] transition-shadow duration-300 rounded-xl bg-slate-50 hover:shadow-md"
+                className={`value-card relative flex flex-col justify-between p-8 transition-all duration-300 rounded-3xl bg-slate-50 border border-slate-100 hover:-translate-y-1 ${item.className}`}
               >
-                <div className="flex items-center w-full mb-4 space-x-3">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded-full" />
-                  <h3 className="text-xl font-bold text-brand-navy">
-                    {item.title}
-                  </h3>
+                {/* Top Section: Icon */}
+                <div className="flex items-start">
+                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-blue-600 bg-white rounded-full">
+                    <item.icon className="w-6 h-6" />
+                  </div>
                 </div>
 
-                <p className="text-lg leading-relaxed text-slate-600">
-                  {item.description}
-                </p>
+                {/* Bottom Section: Text */}
+                <div className="mt-8">
+                  <h3 className="mb-3 text-2xl font-bold text-brand-navy">
+                    {item.title}
+                  </h3>
+                  <p className="text-base leading-relaxed text-slate-600">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

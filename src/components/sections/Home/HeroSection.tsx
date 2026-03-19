@@ -75,7 +75,7 @@ const HeroSection = () => {
             </h1>
 
             <FadeInAnimation delay={0.5}>
-              <p className="font-medium text-[14px] xl:text-[20px] lg:text-[17px] md:text-[20px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
+              <p className="font-medium text-[14px] xl:text-[17px] lg:text-[17px] md:text-[20px] leading-[24px] md:leading-[30px] text-[rgba(41,39,39,0.72)] max-w-[628px]">
                 Experience payments without boundaries. We offer fast, secure,
                 and frictionless transactions for businesses and individuals.
                 You can focus on growing while we handle the payments.

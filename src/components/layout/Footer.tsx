@@ -141,8 +141,11 @@ const Footer = () => {
               />
             </div>
 
-            <p className="mb-6 text-xl font-light text-blue-300">
+            <p className="text-xl font-light text-blue-300 ">
               support@tgipay.com
+            </p>
+            <p className="mb-6 text-xl font-light text-blue-300">
+              Call: +2342013300228
             </p>
             <div className="flex gap-4 mb-8">
               {socialLinks.map((social) => (
