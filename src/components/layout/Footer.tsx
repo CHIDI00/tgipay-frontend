@@ -82,7 +82,7 @@ const Footer = () => {
   const securityLinks = [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Use", href: "/privacy#how-we-use" },
-    // { label: "PCI DSS", href: "" },
+    { label: "PCI DSS", href: "/pci-dss" },
   ];
 
   const supportLinks = [
