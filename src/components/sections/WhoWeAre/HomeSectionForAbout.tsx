@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import herosectionperson from "../../../../public/aboutimage.png";
+import herosectionperson from "../../../../public/aboutimage.webp";
 
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import Link from "next/link";
