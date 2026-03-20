@@ -1,18 +1,45 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import { Button } from "@/components/ui/button";
-// import herosectionperson from "../../../../public/personinwhoweareRaw.webp";
 import herosectionperson from "../../../../public/aboutimage.png";
 
 import FadeInAnimation from "@/components/ui/FadeInAnimation";
 import Link from "next/link";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 const HomeSectionForAbout = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".ripple-ring-about", {
+        scale: 0.5,
+        opacity: 0,
+        duration: 1.9,
+        stagger: 0.15,
+        ease: "elastic.out(1, 0.6)",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top 60%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    },
+    { scope: containerRef },
+  );
+
   return (
-    <section className="w-full lg:max-h-[60rem] h-[100dvh] bg-brand-navy">
-      <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden">
+    <section
+      ref={containerRef}
+      className="w-full lg:max-h-[60rem] h-[100dvh] bg-brand-navy overflow-hidden"
+    >
+      <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-hidden">
         <div className="flex flex-col items-center w-full h-full gap-5 lg:flex-row">
           {/* left content */}
           <FadeInAnimation
@@ -50,8 +77,19 @@ const HomeSectionForAbout = () => {
           <div className="relative flex items-end justify-center w-full h-full lg:w-1/2">
             <FadeInAnimation
               duration={1}
-              className="relative w-full lg:h-[90%] h-full overflow-hidden flex justify-center items-center"
+              className="relative w-full lg:h-[90%] h-full overflow-visible flex justify-center items-center"
             >
+              <div className="absolute flex items-center justify-center -translate-x-1/2 -translate-y-1/2 pointer-events-none top-1/2 left-1/2 -z-10">
+                <div className="ripple-ring-about absolute w-[35rem] h-[35rem] border-[1px] border-brand-cyan/20 rounded-full" />
+                <div className="ripple-ring-about absolute w-[45rem] h-[45rem] border-[2px] border-brand-cyan/20 rounded-full" />
+                <div className="ripple-ring-about absolute w-[55rem] h-[55rem] border-[3px] border-brand-cyan/20 rounded-full" />
+                <div className="ripple-ring-about absolute w-[65rem] h-[65rem] border-[4px] border-brand-cyan/20 rounded-full" />
+              </div>
+
+              <div className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2 w-[30rem] h-[30rem] md:w-[35rem] md:h-[35rem] bg-brand-cyan flex justify-center items-center">
+                <div className="w-[90%] h-[90%] bg-transparent border-[15px] md:border-[20px] border-brand-navy rounded-full"></div>
+              </div>
+
               <Image
                 src={herosectionperson}
                 alt="Payment solutions professional"
@@ -60,8 +98,6 @@ const HomeSectionForAbout = () => {
                 loading="lazy"
                 className="z-50 w-auto h-full"
               />
-
-              <div className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2 w-[70%] h-[70%] bg-brand-cyan"></div>
             </FadeInAnimation>
           </div>
         </div>
