@@ -9,14 +9,14 @@ export const metadata = {
 
 export default function PCIDSSPage() {
   return (
-    <div className="w-full min-h-screen bg-slate-50 pt-32 pb-24">
+    <div className="w-full min-h-screen pt-32 pb-24 bg-slate-50">
       <div className="max-w-[60rem] px-4 mx-auto">
-        <div className="flex flex-col items-center bg-white rounded-3xl shadow-sm p-8 md:p-14 border border-slate-100">
-          <h1 className="text-3xl md:text-5xl font-bold text-center text-brand-navy mb-8">
+        <div className="flex flex-col items-center p-4 bg-white border shadow-sm rounded-3xl md:p-14 border-slate-100">
+          <h1 className="mb-8 text-2xl font-bold text-center md:text-5xl text-brand-navy">
             PCI DSS Certification
           </h1>
 
-          <div className="text-lg leading-relaxed text-slate-600 space-y-6 mb-12">
+          <div className="mb-12 space-y-6 leading-relaxed text-md text-slate-600">
             <p>
               At TGIPAY, the security of our customers and their sensitive data
               is our highest priority. We are proud to be fully{" "}
@@ -41,8 +41,8 @@ export default function PCIDSSPage() {
             </p>
           </div>
 
-          <div className="w-full flex justify-center">
-            <div className="relative bg-slate-50 p-3 rounded-xl border border-slate-200 shadow-sm w-full max-w-2xl flex items-center justify-center">
+          <div className="flex justify-center w-full">
+            <div className="relative flex items-center justify-center w-full max-w-2xl p-3 border shadow-sm bg-slate-50 rounded-xl border-slate-200">
               <Image
                 src="/PCIDSSCERTIFICATE.jpg"
                 alt="TGIPAY PCI DSS Certificate"

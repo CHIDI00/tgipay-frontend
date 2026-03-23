@@ -47,7 +47,7 @@ const HomeSectionForAbout = () => {
             duration={1.2}
             className="w-full lg:w-1/2 lg:py-[4.4rem] pt-[6rem] xl:space-y-14 md:space-y-5 space-y-3"
           >
-            <h1 className="font-bold text-white text-[30px]  md:text-[50px] lg:text-[40px] xl:text-[50px] leading-tight lg:leading-[45px] xl:leading-[60px]">
+            <h1 className="font-bold text-white text-[25px]  md:text-[50px] lg:text-[40px] xl:text-[50px] leading-tight lg:leading-[45px] xl:leading-[60px]">
               <span>The payment gateway</span>
               <br />
               <span>built for simplicity </span>
