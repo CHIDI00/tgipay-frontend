@@ -17,9 +17,9 @@ const HeroSection = () => {
   return (
     <section className="w-full lg:max-h-[60rem] h-[100dvh] bg-[#F9FAFB] ">
       <div className="max-w-[90rem] h-full flex justify-between items-center px-4 mx-auto overflow-y-hidden ">
-        <div className="flex flex-col items-center justify-center w-full h-full lg:flex-row md:gap-y-3 gap-y-7">
+        <div className="flex flex-col items-center justify-center w-full h-full lg:flex-row md:gap-y-3 gap-y-3">
           {/* left content*/}
-          <div className=" w-full lg:w-1/2 lg:pt-[0rem] md:pt-[6rem] pt-[7rem] lg:space-y-5 md:space-y-2 space-y-3 ">
+          <div className=" w-full lg:w-1/2 lg:pt-[0rem] md:pt-[6rem] pt-[10rem] lg:space-y-5 md:space-y-2 space-y-3 ">
             <h1 className="font-bold text-[25px] md:text-[50px] lg:text-[40px] xl:text-[55px] leading-tight lg:leading-[30px] xl:leading-[60px]">
               <span className="block text-hero-navy">
                 {" "}
@@ -126,7 +126,7 @@ const HeroSection = () => {
                 />
               </div>
 
-              <FloatingAnimation className="absolute bottom-0 z-10 -translate-x-1/2 left-1/2">
+              <FloatingAnimation className="absolute z-10 -translate-x-1/2 bottom-12 md:bottom-0 left-1/2">
                 <Image
                   src={CircularChart}
                   alt="Payment solutions professional"
