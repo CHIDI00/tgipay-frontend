@@ -12,7 +12,9 @@ import {
   newlyAddedProducts,
 } from "@/components/sections/Marketplace/dummyData";
 
-const MarketplacePage = () => {
+const MarketplacePage = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+
   return (
     <main className="px-4 py-6 mx-auto space-y-12 max-w-[90rem] font-display">
       <HeroBanner />

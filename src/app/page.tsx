@@ -15,7 +15,8 @@ import ReadyToTransform from "@/components/sections/Home/ReadyToTransform";
 import WaysToReceivePayments from "@/components/sections/Home/WaysToReceivePayments";
 import WeEmpowerBusiness from "@/components/sections/Home/WeEmpowerBusiness";
 
-const page = () => {
+const page = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   return (
     <div>
       <HeroSection />
