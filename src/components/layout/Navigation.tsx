@@ -72,7 +72,7 @@ const Navigation = () => {
         </div>
 
         <div
-          className={`items-center justify-between hidden gap-8 font-medium lg:flex xl:text-[16px] lg:text-[12px]  ${textColor}`}
+          className={`items-center justify-between hidden gap-8 font-medium xl:flex xl:text-[16px] lg:text-[12px]  ${textColor}`}
         >
           {menuItems.map((item) => (
             <Link
@@ -85,7 +85,7 @@ const Navigation = () => {
           ))}
         </div>
 
-        <div className="items-center justify-between hidden gap-6 lg:flex xl:text-[16px] lg:text-[12px]">
+        <div className="items-center justify-between lg:hidden hidden gap-6 xl:flex xl:text-[16px] lg:text-[12px]">
           <div className="relative h-6 overflow-hidden cursor-pointer group w-28">
             <span
               className={`absolute inset-0 flex items-center transition-transform duration-300 ease-in-out group-hover:-translate-y-full font-medium ${textColor}`}
@@ -114,7 +114,7 @@ const Navigation = () => {
           </Link>
         </div>
 
-        <div className="lg:hidden">
+        <div className="flex xl:hidden lg:flex">
           <MobileMenu items={menuItems} isDarkTheme={isDarkTheme} />
         </div>
       </div>

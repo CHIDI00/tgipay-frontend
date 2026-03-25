@@ -25,19 +25,30 @@ const SearchResults = () => {
   const [sortOption, setSortOption] = useState("Newest Arrivals");
   const [currentPage, setCurrentPage] = useState(1);
 
-  //  search filtering
+  // We filter the combined allProducts array based on the user's search query and selected category.
   const filteredProducts = allProducts.filter((product) => {
+    // check if the product matches the search query.
+    // If a query exists, we check if the search string is included in either:
+    // - The product's name (case-insensitive)
+    // - The product's description, if it exists (case-insensitive)
+    // If there is no query provided in the URL, we skip this check by returning 'true'.
     const matchesQuery = query
       ? product.name.toLowerCase().includes(query.toLowerCase()) ||
         (product.description &&
           product.description.toLowerCase().includes(query.toLowerCase()))
       : true;
 
+    // check if the product belongs to the selected category.
+    // If a specific category is selected (and it's not the default "All Categories"),
+    // verify that the product's category strictly matches it.
+    // If no category is selected or "All Categories" is active, we bypass this check returning 'true'.
     const matchesCategory =
       category && category !== "All Categories"
         ? product.category === category
         : true;
 
+    // final Validation
+    // for a product to appear in the results, it must satisfy BOTH the text search and category filter.
     return matchesQuery && matchesCategory;
   });
 

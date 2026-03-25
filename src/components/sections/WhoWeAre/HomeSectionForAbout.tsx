@@ -86,7 +86,7 @@ const HomeSectionForAbout = () => {
                 <div className="ripple-ring-about absolute w-[65rem] h-[65rem] border-[4px] border-brand-cyan/20 rounded-full" />
               </div>
 
-              <div className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2 w-[30rem] h-[30rem] md:w-[35rem] md:h-[35rem] bg-brand-cyan flex justify-center items-center">
+              <div className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2 w-[25rem] h-[25rem] md:w-[35rem] md:h-[35rem] bg-brand-cyan flex justify-center items-center">
                 <div className="w-[90%] h-[90%] bg-transparent border-[15px] md:border-[20px] border-brand-navy rounded-full"></div>
               </div>
 

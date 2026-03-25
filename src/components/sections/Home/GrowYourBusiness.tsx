@@ -70,7 +70,7 @@ const GrowYourBusiness = () => {
               TGIPay Debit Card Solution
             </h2>
 
-            <p className=" font-normal text-[14px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
+            <p className=" font-normal text-[14px] md:text-[18px] lg:text-[16px] xl:text-[18px] leading-[28px] md:leading-[30px] lg:leading-[26px] xl:leading-[30px] text-black max-w-[693px]">
               We are integrated with the world&apos;s biggest and most
               acceptable card networks. You can receive payments from your
               customers using local debit and credit cards, VISA, Mastercard and

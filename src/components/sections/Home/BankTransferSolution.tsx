@@ -39,7 +39,7 @@ const BankTransferSolution = () => {
               Bank Transfer Solution
             </h2>
 
-            <p className=" font-normal text-[14px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
+            <p className=" font-normal text-[14px] md:text-[18px] lg:text-[16px] xl:text-[18px] leading-[28px] md:leading-[30px] lg:leading-[26px] xl:leading-[30px] text-black max-w-[693px]">
               Safety, security and simplicity are our unique selling points. The
               bank transfer channel provides the customer the opportunity to
               make a transfer to a one time bank account uniquely generated and

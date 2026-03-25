@@ -53,7 +53,7 @@ const BankAccountSolution = () => {
               Bank Account Solution
             </h2>
 
-            <p className=" font-normal text-[14px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
+            <p className=" font-normal text-[14px] md:text-[18px] lg:text-[16px] xl:text-[18px] leading-[28px] md:leading-[30px] lg:leading-[26px] xl:leading-[30px] text-black max-w-[693px]">
               One of our effective payment channels is the use of our bank
               account method whereby you choose your bank, enter in your bank
               account and with our integration with the settlement system your

@@ -41,7 +41,7 @@ const PaymentLinkSolution = () => {
               Payment Link Solution
             </h2>
 
-            <p className=" font-normal text-[14px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
+            <p className=" font-normal text-[14px] md:text-[18px] lg:text-[16px] xl:text-[18px] leading-[28px] md:leading-[30px] lg:leading-[26px] xl:leading-[30px] text-black max-w-[693px]">
               TGIPAY takes cognizance of merchants that may not want to have a
               website and will depend on us as their payment gateway to make
               payment collections accessible to them. So, we create a payment
@@ -70,7 +70,7 @@ const PaymentLinkSolution = () => {
 
             <Image
               src={mobilephoneRaw}
-              alt="Debit cards illustration"
+              alt="mobile illustration"
               width={300}
               height={100}
               loading="lazy"

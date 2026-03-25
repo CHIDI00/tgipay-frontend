@@ -38,7 +38,7 @@ const OfflinePayment = () => {
               USSD / Offline Payment
             </h2>
 
-            <p className=" font-normal text-[14px] md:text-[18px] leading-[28px] md:leading-[30px] text-black max-w-[693px]">
+            <p className=" font-normal text-[14px] md:text-[18px] lg:text-[16px] xl:text-[18px] leading-[28px] md:leading-[30px] lg:leading-[26px] xl:leading-[30px] text-black max-w-[693px]">
               It gives us a delight to keep our customers satisfied by providing
               various channels to ease payment collections, The Unstructured
               Supplementary Service Data (USSD) allows customers without

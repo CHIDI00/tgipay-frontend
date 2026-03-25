@@ -141,10 +141,10 @@ const Footer = () => {
               />
             </div>
 
-            <p className="text-xl font-light text-blue-300 ">
+            <p className="text-xl font-light text-blue-300 lg:text-sm xl:text-xl ">
               support@tgipay.com
             </p>
-            <p className="mb-6 text-xl font-light text-blue-300">
+            <p className="mb-6 text-xl font-light text-blue-300 lg:text-sm xl:text-xl">
               Call: +2342013300228
             </p>
             <div className="flex gap-4 mb-8">
